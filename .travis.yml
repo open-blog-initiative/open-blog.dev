@@ -13,5 +13,6 @@ deploy:
   local_dir: docs/.vuepress/dist
   github-token: $GITHUB_TOKEN
   keep-history: true
+  fqdn: open-blog.dev
   on:
     branch: master
