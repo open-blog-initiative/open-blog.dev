@@ -10,7 +10,8 @@ module.exports = {
     },
     sitemap: {
       hostname: "https://open-blog.dev"
-    }
+    },
+    "@vuepress/medium-zoom": {}
   },
   locales: {
     "/": {
