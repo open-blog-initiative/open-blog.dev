@@ -7,6 +7,9 @@ module.exports = {
         message: "New content is available.",
         buttonText: "Refresh"
       }
+    },
+    sitemap: {
+      hostname: "https://open-blog.dev"
     }
   },
   locales: {
