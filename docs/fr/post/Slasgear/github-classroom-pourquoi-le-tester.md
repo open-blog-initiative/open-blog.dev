@@ -5,6 +5,19 @@ profile_picture: https://pbs.twimg.com/profile_images/970399793485897729/NW8ACov
 biography: Développeur et trublion au sein des équipes techniques d'M6 pour Zenika. Enseignant en école d'ingénieur sur Lyon.
 github_profile: Slashgear
 twitter_profile: Slashgear_
+meta:
+  - name: og-title
+    content: Github classroom, pourquoi vous devriez l'utiliser
+  - name: og-description
+    content:
+      Lorsque j'ai commencé à enseigner en septembre dernier, je recherchais une solution
+      pour pouvoir suivre facilement l'avancée des étudiants pendant leur TP. J'ai d'abord songé à leur
+      demander l'accès à leur repository Github/Bitbucket... mais je me suis vite rendu compte que ça
+      n'allait pas être gérable durablement. J'ai alors cherché une solution clé en main.
+  - name: og-image
+    content: https://open-blog.dev/Slashgear/github-classroom-logo.jpg
+  - name: author
+    content: Antoine Caron
 ---
 
 # Github classroom, pourquoi vous devriez l'utiliser
