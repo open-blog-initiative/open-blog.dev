@@ -1,10 +1,12 @@
 ---
+type: post
 author: Antoine CARON
 pseudo: Slashgear
 profile_picture: https://pbs.twimg.com/profile_images/970399793485897729/NW8ACov8_400x400.jpg
 biography: Développeur et trublion au sein des équipes techniques d'M6 pour Zenika. Enseignant en école d'ingénieur sur Lyon.
 github_profile: Slashgear
 twitter_profile: Slashgear_
+date: 2019-03-24
 meta:
   - name: og-title
     content: Github classroom, pourquoi vous devriez l'utiliser
