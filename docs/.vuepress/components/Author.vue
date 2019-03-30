@@ -80,6 +80,7 @@ export default {
 <style scoped>
 .author {
   display: flex;
+  margin-bottom: 12px;
 }
 
 .author > .author__description {
