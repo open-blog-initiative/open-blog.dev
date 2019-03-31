@@ -37,7 +37,8 @@ module.exports = {
         docsRepo: "open-blog-initiative/open-blog.dev",
         docsDir: "docs",
         editLinks: true,
-        sidebar: "auto"
+        sidebar: "auto",
+        nav: [{ text: "Contribute", link: "/contributing" }]
       },
       "/fr/": {
         selectText: "Langues",

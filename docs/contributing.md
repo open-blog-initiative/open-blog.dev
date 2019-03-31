@@ -1,0 +1,112 @@
+# Contributing
+
+Open blog is before all an open source project to share a publication of blog posts with the community.
+
+> Developed by the community for everyone freely
+
+## Share your blog posts :rocket:
+
+Before adding your blog post to Open blog, you should check those 3 steps.
+
+### Post rules
+
+- Post should follow the [Code of Conduct](https://github.com/open-blog-initiative/open-blog.dev/blob/master/CODE_OF_CONDUCT.md).
+- Post can't be direct advertising.
+- Post can't break any copyright in its content.
+- Post should not be published in another blog.
+- Post should be written in one of those languages:
+  - French :fr:
+  - English :gb:
+
+NB: For now we only support two languages because those languages are maintainer ones.
+If you want to be part of the maintainer of Open Blog for another language, just contact one of the maintainer.
+
+### How to :question:
+
+#### Install
+
+In order to work locally on your blog post and see how it will be displayed when merged, be sur to have NodeJS installed (>=10.15).
+
+- Fork this repository ["Fork me !"](https://github.com/open-blog-initiative/open-blog.dev)
+- Clone your forked version
+- Install dependencies
+
+```sh
+npm install
+```
+
+or
+
+```sh
+yarn install
+```
+
+- Start dev server
+
+```sh
+npm run docs:dev
+```
+
+or
+
+```sh
+yarn docs:dev
+```
+
+#### Create your post file
+
+In `docs/post` folder, create a folder with your github name.
+In this fresh new directory, just create a [Markdown file](https://fr.wikipedia.org/wiki/Markdown).
+Name it with a dashCase title (example: `my-awesome-post.md`.
+
+If you don't know how to write a Markdown file matching Vuepress rules, check the [documentation](https://v1.vuepress.vuejs.org/guide/markdown.html).
+
+##### Metadata
+
+At the beginning of you blog post, you must define `frontmatter` block to add metadata to you post.
+
+```yml
+------
+type: post
+author: Antoine CARON # Required
+pseudo: Slashgear # If you have one
+profile_picture: https://my-awesome-image/profile.jpg # Only external on, twitter image for example.
+biography: Bla bla bla about you # truncate after 280 characters.
+github_profile: Slashgear # will display github icon link to you profile
+twitter_profile: Slashgear_ # will display twitter icon link to you profile
+meta: # SEO meta
+  - name: og-title
+    content: Title example
+---
+
+```
+
+##### Author Badge
+
+If you want to display a nice author presentation block, make sure to define metadata in the `frontmatter` part.
+
+Then add at the end of your post.
+
+```html
+<Author />
+```
+
+##### Comments section
+
+If you want to let user comment your blog post, just add this add the end of your post.
+
+```html
+<Disqus />
+```
+
+### Open your pull request
+
+:construction:
+
+Pre-reading, typos, linter, PR state, Review time.
+
+## Make "Open Blog" a better place :sparkles:
+
+If you have any idea to improve _Open blog_ globally, don't hesitate to open a discussion [Github issues](https://github.com/open-blog-initiative/open-blog.dev/issues/new) (Take 5 minutes to check if your idea have not been submitted yet).
+
+This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your idea could also be a great contribution to this project.
