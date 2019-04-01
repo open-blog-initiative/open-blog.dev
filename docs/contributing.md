@@ -18,7 +18,7 @@ Before adding your blog post to Open blog, you should check these 3 steps.
   - French :fr:
   - English :gb:
 
-NB: For now we only support two languages because those languages are maintainer ones.
+NB: For now we only support two languages because those are maintainer ones.
 If you want to be part of the maintainer of Open Blog for another language, just contact one of the maintainer.
 
 ### How to :question:
