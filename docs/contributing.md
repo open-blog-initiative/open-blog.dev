@@ -13,7 +13,8 @@ Before adding your blog post to Open blog, you should check these 3 steps.
 - Post should follow the [Code of Conduct](https://github.com/open-blog-initiative/open-blog.dev/blob/master/CODE_OF_CONDUCT.md).
 - Post can't be direct advertising.
 - Post can't break any copyright in its content.
-- Post should not be published in another blog.
+- Post should not be published in another blog (or you should add [canonical url](https://moz.com/blog/cross-domain-rel-canonical-seo-value-cross-posted-content) to main publication).
+- Post content should be related to "Development"
 - Post should be written in one of these languages:
   - French :fr:
   - English :gb:
@@ -101,12 +102,32 @@ If you want to let user comment your blog post, just add this add the end of you
 
 ### Open your pull request
 
-:construction:
+When you are happy of your blog post, open a `pull request` with it.
 
-Pre-reading, typos, linter, PR state, Review time.
+::: warning
+Your pull request should only contain a single post
+:::
+
+- Make sure the build is passing (We use prettier to format markdowns)
+- Resolve your conflicts
+- Ask for two reviews from the community
+
+When those steps are checked, a maintainer will review it.
+
+We will check you followed the [rules](#post-rules)\*[]:
+
+If it looks good to them, one of them will ask you _"When do you want to publish it ?"_.
+
+As soon as you tell us when to merge it, we will schedule it.
 
 ## Make "Open Blog" a better place :sparkles:
 
 If you have any idea to improve _Open blog_ globally, don't hesitate to open a discussion [Github issues](https://github.com/open-blog-initiative/open-blog.dev/issues/new) (Take 5 minutes to check if your idea has not been submitted yet).
 
 This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your ideas could also be a great contribution to this project.
+
+### Translate content
+
+A great way to contribute to _Open blog_ is to translate any blog post to your local.
+Check Vuepress [documentation about internationalization](https://v1.vuepress.vuejs.org/guide/i18n.html#site-level-i18n-config) to see how to do it.
+Follow the [How to](#how-to) section.
