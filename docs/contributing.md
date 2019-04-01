@@ -6,7 +6,7 @@ Open blog is before all an open source project to share a publication of blog po
 
 ## Share your blog posts :rocket:
 
-Before adding your blog post to Open blog, you should check those 3 steps.
+Before adding your blog post to Open blog, you should check these 3 steps.
 
 ### Post rules
 
@@ -14,7 +14,7 @@ Before adding your blog post to Open blog, you should check those 3 steps.
 - Post can't be direct advertising.
 - Post can't break any copyright in its content.
 - Post should not be published in another blog.
-- Post should be written in one of those languages:
+- Post should be written in one of these languages:
   - French :fr:
   - English :gb:
 
@@ -63,15 +63,15 @@ If you don't know how to write a Markdown file matching Vuepress rules, check th
 
 ##### Metadata
 
-At the beginning of you blog post, you must define `frontmatter` block to add metadata to you post.
+At the beginning of you blog post, you must define `frontmatter` block to add metadata to your post.
 
 ```yml
 ------
 type: post
 author: Antoine CARON # Required
 pseudo: Slashgear # If you have one
-profile_picture: https://my-awesome-image/profile.jpg # Only external on, twitter image for example.
-biography: Bla bla bla about you # truncate after 280 characters.
+profile_picture: https://my-awesome-image/profile.jpg # Only external one, twitter image for example.
+biography: Bla bla bla about you # truncated after 280 characters.
 github_profile: Slashgear # will display github icon link to you profile
 twitter_profile: Slashgear_ # will display twitter icon link to you profile
 meta: # SEO meta
@@ -85,7 +85,7 @@ meta: # SEO meta
 
 If you want to display a nice author presentation block, make sure to define metadata in the `frontmatter` part.
 
-Then add at the end of your post.
+Then add at the end of your post:
 
 ```html
 <Author />
@@ -93,7 +93,7 @@ Then add at the end of your post.
 
 ##### Comments section
 
-If you want to let user comment your blog post, just add this add the end of your post.
+If you want to let user comment your blog post, just add this add the end of your post:
 
 ```html
 <Disqus />
@@ -107,6 +107,6 @@ Pre-reading, typos, linter, PR state, Review time.
 
 ## Make "Open Blog" a better place :sparkles:
 
-If you have any idea to improve _Open blog_ globally, don't hesitate to open a discussion [Github issues](https://github.com/open-blog-initiative/open-blog.dev/issues/new) (Take 5 minutes to check if your idea have not been submitted yet).
+If you have any idea to improve _Open blog_ globally, don't hesitate to open a discussion [Github issues](https://github.com/open-blog-initiative/open-blog.dev/issues/new) (Take 5 minutes to check if your idea has not been submitted yet).
 
-This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your idea could also be a great contribution to this project.
+This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your ideas could also be a great contribution to this project.
