@@ -1,7 +1,6 @@
 const path = require("path");
 const RSS = require("rss");
 const chalk = require("chalk");
-const _ = require("lodash");
 
 module.exports = ({ count = 20, basePath = "https://open-blog.dev" }, ctx) => {
   return {
@@ -12,7 +11,7 @@ module.exports = ({ count = 20, basePath = "https://open-blog.dev" }, ctx) => {
       const { pages, sourceDir } = ctx;
       const siteData = require(path.resolve(sourceDir, ".vuepress/config.js"));
 
-      _.forEach(siteData.locales, (value, langPath) => {
+      Object.entries(siteData.locales).forEach(([langPath, value]) => {
         console.log(chalk.yellow(`Generating ${value.lang} RSS...`));
 
         const feed = new RSS({
