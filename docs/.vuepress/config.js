@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   title: "Open blog",
   plugins: {
@@ -25,6 +27,7 @@ module.exports = {
       description: "Partage tes articles sur une plateforme libre"
     }
   },
+  clientRootMixin: path.resolve(__dirname, "./mixins/canonical.js"),
   themeConfig: {
     locales: {
       "/": {
