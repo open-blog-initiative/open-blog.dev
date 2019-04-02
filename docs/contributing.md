@@ -126,6 +126,8 @@ If you have any idea to improve _Open blog_ globally, don't hesitate to open a d
 
 This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your ideas could also be a great contribution to this project.
 
+Look at our ["Good first issue"](https://github.com/open-blog-initiative/open-blog.dev/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) list if you are looking for an idea.
+
 ### Translate content
 
 A great way to contribute to _Open blog_ is to translate any blog post to your local.
