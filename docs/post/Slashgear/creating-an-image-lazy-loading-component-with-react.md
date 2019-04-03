@@ -6,6 +6,7 @@ profile_picture: https://pbs.twimg.com/profile_images/970399793485897729/NW8ACov
 biography: Frontend dev working at M6 (French TV channel) for Zenika. Teacher in engineering school.
 github_profile: Slashgear
 twitter_profile: Slashgear_
+date: 2019-04-02
 meta:
   - name: title
     content: Creating an image lazy loading component with React
