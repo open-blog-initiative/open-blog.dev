@@ -92,14 +92,6 @@ Then add at the end of your post:
 <Author />
 ```
 
-##### Comments section
-
-If you want to let user comment your blog post, just add this add the end of your post:
-
-```html
-<Disqus />
-```
-
 ### Open your pull request
 
 When you are happy of your blog post, open a `pull request` with it.
