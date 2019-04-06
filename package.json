@@ -12,8 +12,8 @@
     }
   },
   "devDependencies": {
-    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.42",
-    "@vuepress/plugin-pwa": "^1.0.0-alpha.42",
+    "@vuepress/plugin-medium-zoom": "^1.0.0-alpha.46",
+    "@vuepress/plugin-pwa": "^1.0.0-alpha.46",
     "chalk": "^2.4.2",
     "fs-extra": "^7.0.1",
     "vuepress": "^1.0.0-alpha.42",

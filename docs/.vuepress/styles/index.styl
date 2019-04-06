@@ -1,0 +1,29 @@
+:root {
+  --background-color: white
+  --text-color: #2c3e50
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1A1A1C
+    --text-color: white
+  }
+}
+
+html, body, .navbar, .sidebar, .navbar .links {
+  background-color: var(--background-color)!important
+  color: var(--text-color)!important
+}
+
+
+.navbar{
+  border-bottom: solid 1px $accentColor
+}
+
+.custom-block {
+  background-color: var(--background-color)!important
+}
+
+.navbar .site-name {
+  color: var(--text-color)!important
+}

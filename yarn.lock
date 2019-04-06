@@ -863,10 +863,10 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-medium-zoom@^1.0.0-alpha.42":
-  version "1.0.0-alpha.44"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.44.tgz#4c0f218c2576a4c4484ed5a01955a6b6a5144d5a"
-  integrity sha512-2zkITNeyE5inxalCOAhovwswrYw5Ql/mBw73az0dir6zZao4orVu/iF2SrsLUu7t1TSFXnRLl4aC7QItGdOTmw==
+"@vuepress/plugin-medium-zoom@^1.0.0-alpha.46":
+  version "1.0.0-alpha.46"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-1.0.0-alpha.46.tgz#ada9df980b9f32ea0e50c13ca9d0d0a39add72d2"
+  integrity sha512-/PWBzWAnZqPCLj6QLR0dERbJForuqXcDVfv9MVDiLUlXwgtLARCX+3RaYpQYMVMb9xyoXiCpNV2YEzWsUW8Iiw==
   dependencies:
     medium-zoom "^0.4.0"
 
@@ -877,12 +877,12 @@
   dependencies:
     nprogress "^0.2.0"
 
-"@vuepress/plugin-pwa@^1.0.0-alpha.42":
-  version "1.0.0-alpha.44"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.0.0-alpha.44.tgz#2cfe73e3d6c01487da988bac554b01afa6d19753"
-  integrity sha512-bWUwDNeiehLxxSmCpBPQJIr771oNuSrLCSEqDp7rVz+k/Rca28NYUulF/+KsKGFfnpi5cZeUBff35DPeb97R7g==
+"@vuepress/plugin-pwa@^1.0.0-alpha.46":
+  version "1.0.0-alpha.46"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.0.0-alpha.46.tgz#31c454aebfc950b4503db3d7200a481cc70357e5"
+  integrity sha512-+cXq7WmbnPHmIDaD+Mt/w7nph0e5g2abtOdfM25Z1pQfc2d38uea97xlNxFSnoDKWLUx8i9sDTQ0Oz7jjTPnfg==
   dependencies:
-    "@vuepress/shared-utils" "^1.0.0-alpha.44"
+    "@vuepress/shared-utils" "^1.0.0-alpha.46"
     register-service-worker "^1.5.2"
     workbox-build "^3.1.0"
 
@@ -902,6 +902,21 @@
   version "1.0.0-alpha.44"
   resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.0.0-alpha.44.tgz#916f2c3c7f121d490936464997d7e31200e558b8"
   integrity sha512-2dQWfvoJr9JskbHxsvR7WIFi5bqjbl5Uhlo5z1sw2nG7DsVwVTGvavfelijU6oJtAWzmKXaolpMfivHPgzIjWQ==
+  dependencies:
+    chalk "^2.3.2"
+    diacritics "^1.3.0"
+    escape-html "^1.0.3"
+    fs-extra "^5.0.0"
+    globby "^8.0.1"
+    gray-matter "^4.0.1"
+    hash-sum "^1.0.2"
+    semver "^5.5.0"
+    upath "^1.1.0"
+
+"@vuepress/shared-utils@^1.0.0-alpha.46":
+  version "1.0.0-alpha.46"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.0.0-alpha.46.tgz#19b67b47a93236ef197ac8ee76bfa265f99a9a95"
+  integrity sha512-A5WqlcEjrcUJtbq59UnjojOgbLSj4fp1F4Gf0/9zsOkRLt8TgPlCeBtvpkOZI5+JpTb7XeL+gqkVYJLWEAfWBw==
   dependencies:
     chalk "^2.3.2"
     diacritics "^1.3.0"
