@@ -70,16 +70,12 @@ At the beginning of you blog post, you must define `frontmatter` block to add me
 ------
 type: post
 author: Antoine CARON # Required
-pseudo: Slashgear # If you have one
-profile_picture: https://my-awesome-image/profile.jpg # Only external one, twitter image for example.
-biography: Bla bla bla about you # truncated after 280 characters.
-github_profile: Slashgear # will display github icon link to you profile
+github_profile: Slashgear # Required
 twitter_profile: Slashgear_ # will display twitter icon link to you profile
 meta: # SEO meta
   - name: og-title
     content: Title example
 ---
-
 ```
 
 ##### Author Badge

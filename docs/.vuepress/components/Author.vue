@@ -1,18 +1,11 @@
 <template>
   <section class="author">
-    <img
-      :src="$frontmatter.profile_picture"
-      alt="profile"
-      class="author__profile"
-    />
+    <img :src="author.avatarUrl" alt="profile" class="author__profile" />
     <div class="author__description">
       <h3 class="author__name">
-        {{ $frontmatter.author }}
-        <template v-if="$frontmatter.pseudo"
-          >({{ $frontmatter.pseudo }})</template
-        >
+        {{ author.name }} @{{ $frontmatter.github_profile }}
       </h3>
-      <div v-if="biographie" class="author__bio">{{ biographie }}</div>
+      <div v-if="author.bioHTML" class="author__bio" v-html="author.bioHTML" />
       <div class="author_socials">
         <a
           v-if="$frontmatter.twitter_profile"
@@ -60,19 +53,19 @@
 </template>
 
 <script>
+import { getGithubProfile } from "../githubProvider";
+
 export default {
   name: "Author",
-  computed: {
-    biographie() {
-      if (
-        this.$frontmatter.biography &&
-        this.$frontmatter.biography.length > 280
-      ) {
-        return `${this.$frontmatter.biography.substring(0, 280)}...`;
-      }
-
-      return this.$frontmatter.biography;
-    }
+  data() {
+    return {
+      author: {}
+    };
+  },
+  created() {
+    getGithubProfile(this.$frontmatter.github_profile).then(
+      author => (this.author = author)
+    );
   }
 };
 </script>
