@@ -1,33 +1,33 @@
 <template>
-  <a class="card" :href="article.url">
-    <img :src="article.image" class="card-image" :alt="article.title" />
-    <div class="card-title">{{ article.title }}</div>
+  <a class="card" :href="post.url">
+    <img :src="post.image" class="card-image" :alt="post.title" />
+    <div class="card-title">{{ post.title }}</div>
     <div class="card-author">
-      <img
-        :src="article.author.image"
-        alt="profile"
-        class="card-author-image"
-      />
-      <span class="card-author-name">{{ article.author.name }}</span>
+      <img :src="post.author.image" alt="profile" class="card-author-image" />
+      <span class="card-author-name">{{ post.author.name }}</span>
     </div>
   </a>
 </template>
 
 <script>
 export default {
-  name: "ArticleCard",
-  props: ["article"]
+  name: "PostCard",
+  props: ["post"]
 };
 </script>
 
 <style scoped>
 .card {
   display: inline-block;
-  width: 33%;
+  width: 20%;
+  margin: 5px;
+  min-width: 300px;
   border: 1px solid rgba(128, 128, 128, 0.7);
   box-shadow: 2px 2px 10px 0px;
   border-radius: 3px;
   background-color: #fff;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .card-image {
@@ -60,9 +60,5 @@ export default {
   height: 3.6em;
   line-height: 1.2em;
   overflow: hidden;
-}
-a {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
 }
 </style>

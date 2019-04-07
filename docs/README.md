@@ -11,4 +11,4 @@ features:
 footer: MIT Licensed | Copyright © 2019-present Antoine Caron
 ---
 
-<LastTenArticles locale="en-US"/>
+<LastTenPosts />
