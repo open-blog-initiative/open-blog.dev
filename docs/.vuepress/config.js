@@ -33,6 +33,10 @@ module.exports = {
     }
   },
   themeConfig: {
+    algolia: {
+      apiKey: "7b6b894eac0c2ba9a27bc1bcddb494f0",
+      indexName: "caron-open-blog"
+    },
     locales: {
       "/": {
         selectText: "Languages",
