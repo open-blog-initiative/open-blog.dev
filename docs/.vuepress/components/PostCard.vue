@@ -16,50 +16,49 @@ export default {
 };
 </script>
 
-<style scoped>
-.card {
-  display: inline-block;
-  width: 20%;
-  margin: 5px;
-  min-width: 300px;
-  border: 1px solid rgba(128, 128, 128, 0.7);
-  box-shadow: 2px 2px 10px 0px;
-  border-radius: 3px;
-  background-color: #fff;
-  color: inherit;
-  text-decoration: inherit;
-}
+<style scoped lang="stylus">
+.card
+  display: inline-block
+  width: 20%
+  margin: 5px
+  min-width: 300px
+  border: 1px solid $card-border-color
+  box-shadow: 2px 2px 10px 0px
+  border-radius: 3px
+  background-color: $card-background-color
+  color: inherit
+  text-decoration: inherit
 
-.card-image {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-}
 
-.card-author {
-  padding: 0em 1em 1em 1em;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
+.card-image
+  width: 100%
+  height: 120px
+  object-fit: cover
 
-.card-author-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
 
-.card-author-name {
-  padding-left: 1em;
-}
+.card-author
+  padding: 0em 1em 1em 1em
+  display: flex
+  flex-wrap: nowrap
+  justify-content: flex-start
+  align-items: center
 
-.card-title {
-  padding-bottom: 0.5em;
-  padding-left: 0.5em;
-  font-size: 1.2em;
-  height: 3.6em;
-  line-height: 1.2em;
-  overflow: hidden;
-}
+
+.card-author-image
+  width: 40px
+  height: 40px
+  border-radius: 50%
+
+
+.card-author-name
+  padding-left: 1em
+
+
+.card-title
+  padding-bottom: 0.5em
+  padding-left: 0.5em
+  font-size: 1.2em
+  height: 3.6em
+  line-height: 1.2em
+  overflow: hidden
 </style>
