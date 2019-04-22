@@ -280,3 +280,4 @@ If you are curious, take a look at this conference about the upcoming features.
 <hr />
 
 <Author />
+<LastTenPosts />
