@@ -10,3 +10,5 @@ features:
     details: Thanks to VuePress, you could add/translate freely content in your local.
 footer: MIT Licensed | Copyright © 2019-present Antoine Caron
 ---
+
+<LastTenPosts />

@@ -168,3 +168,4 @@ Pour l'évaluation vous avez deux solutions :
 - Mettre en place des tests unitaires sur le projet de base et connecter un outil de CI en SaaS comme travis-ci.
 
 <Author />
+<LastTenPosts />

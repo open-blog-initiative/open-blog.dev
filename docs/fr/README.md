@@ -10,3 +10,5 @@ features:
     details: Grâce à Vuepress, tu peux ajouter/traduire un article dans n'importe quelle langue.
 footer: MIT Licensed | Copyright © 2019-present Antoine Caron
 ---
+
+<LastTenPosts />

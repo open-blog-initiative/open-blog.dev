@@ -1,3 +1,16 @@
+const locales = {
+  "/": {
+    lang: "en-US",
+    title: "Open blog",
+    description: "Share blog posts on an free open platform"
+  },
+  "/fr/": {
+    lang: "fr-FR",
+    title: "Blog libre",
+    description: "Partage tes articles sur une plateforme libre"
+  }
+};
+
 module.exports = {
   title: "Open blog",
   plugins: [
@@ -20,18 +33,7 @@ module.exports = {
     ["@vuepress/medium-zoom"],
     require("./plugins/rss")
   ],
-  locales: {
-    "/": {
-      lang: "en-US",
-      title: "Open blog",
-      description: "Share blog posts on an free open platform"
-    },
-    "/fr/": {
-      lang: "fr-FR",
-      title: "Blog libre",
-      description: "Partage tes articles sur une plateforme libre"
-    }
-  },
+  locales,
   themeConfig: {
     algolia: {
       apiKey: "7b6b894eac0c2ba9a27bc1bcddb494f0",
@@ -64,5 +66,8 @@ module.exports = {
         sidebar: "auto"
       }
     }
+  },
+  extendPageData($page) {
+    $page.lang = locales[$page._localePath].lang;
   }
 };
