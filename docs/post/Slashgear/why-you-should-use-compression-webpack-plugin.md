@@ -100,3 +100,8 @@ When you compress during the build :
 - You can easily see the complete size of your web application (which is great when you want to track web app performances)
 - Your app is much more portable (you will easily change your deployment or your web server with pre-compressed assets)
 - As a frontend developper you are familiar with the great value of lossless compression.
+
+<hr />
+
+<Author />
+<LastTenPosts />
