@@ -1,26 +1,16 @@
 ---
-type: post
 author: Antoine Caron
-pseudo: Slashgear
-profile_picture: https://pbs.twimg.com/profile_images/970399793485897729/NW8ACov8_400x400.jpg
-biography: Frontend dev working at M6 (French TV channel) for Zenika. Teacher in engineering school.
+pseudo: slashgear
 github_profile: Slashgear
 twitter_profile: Slashgear_
 date: 2019-04-02
-meta:
-  - name: title
-    content: Why you should use Compression Webpack Plugin ?
-  - name: og-title
-    content: Why you should use Compression Webpack Plugin ?
-  - name: og-description
-    content: If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time. You may have used code splitting, tree shaking, uglifyfication but you may have forgot a very important step.
-  - name: og-image
-    content: https://open-blog.dev/Slashgear/matt-artz-353260-unsplash.jpg
-  - name: author
-    content: Antoine Caron
+title: Why you should use Compression Webpack Plugin ?
+description: If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time. You may have used code splitting, tree shaking, uglifyfication but you may have forgot a very important step.
+tags:
+  - webpack
+  - perfs
+  - compression
 ---
-
-# Why you should use Compression Webpack Plugin ?
 
 If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time.
 You may have used code splitting, tree shaking, uglifyfication but you may have forgot a very important step.

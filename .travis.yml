@@ -5,12 +5,12 @@ cache:
   yarn: true
 script:
   - yarn lint
-  - yarn docs:build
+  - yarn build
 
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: docs/.vuepress/dist
+  local_dir: public
   github-token: $GITHUB_TOKEN
   keep-history: true
   fqdn: open-blog.dev
