@@ -9,8 +9,11 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <nav
       style={{
+        display: "flex",
+        alignItems: "baseline",
+        justifyContent: "space-between",
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
@@ -27,7 +30,23 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+
+      <h2
+        style={{
+          margin: 0,
+        }}
+      >
+        <Link
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+          to="contributing"
+        >
+          Contribute
+        </Link>
+      </h2>
+    </nav>
   </header>
 )
 

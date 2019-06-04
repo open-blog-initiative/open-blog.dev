@@ -1,28 +1,14 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import langs from "../constants/langs"
+import { ArticleList } from "../components/articleList"
 
 // eslint-disable-next-line react/prop-types
-export default ({ data }) => {
+export default ({ data, pageContext }) => {
   return (
     <Layout>
-      <div>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link
-            to={node.fields.slug}
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            <div key={node.id}>
-              <h3>
-                {langs[node.frontmatter.lang] || langs.en}{" "}
-                {node.frontmatter.title} <span>— {node.frontmatter.date}</span>
-              </h3>
-              <p>{node.excerpt}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <h1>Articles of category "{pageContext.tag}"</h1>
+      <ArticleList articleList={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }
@@ -37,6 +23,9 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             lang
+            tags
+            author
+            pseudo
           }
           fields {
             slug

@@ -29,17 +29,22 @@ exports.createPages = ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              pseudo
+            }
           }
         }
       }
     }
   `).then(result => {
-    const author = result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
         component: path.resolve(`./src/templates/blog-post.js`),
         context: {
           slug: node.fields.slug,
+          pseudo: node.frontmatter.pseudo || "",
+          loadAuthor: !!node.frontmatter.pseudo,
         },
       })
     })

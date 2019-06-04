@@ -1,46 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import langs from "../constants/langs"
+import { ArticleList } from "../components/articleList"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <Link
-        to={node.fields.slug}
-        style={{ textDecoration: "none", color: "black" }}
-      >
-        <div key={node.id}>
-          <h3>
-            {langs[node.frontmatter.lang] || langs.en} {node.frontmatter.title}{" "}
-            <span>— {node.frontmatter.date}</span>
-          </h3>
-          <span>
-            {node.frontmatter.tags.map((tag, index) => (
-              <Link
-                to={`tags/${tag}`}
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  margin: "0 0.2rem",
-                  padding: "0.1rem 0.5rem",
-                  borderRadius: "8px",
-                  backgroundColor: "lightgrey",
-                }}
-              >
-                {tag}
-              </Link>
-            ))}
-            &nbsp;by{" "}
-            <Link to={node.frontmatter.pseudo}>{node.frontmatter.author}</Link>
-          </span>
-          <p>{node.excerpt}</p>
-        </div>
-      </Link>
-    ))}
+    <h2>Last blog posts :</h2>
+    <ArticleList articleList={data.allMarkdownRemark.edges} />
   </Layout>
 )
 
