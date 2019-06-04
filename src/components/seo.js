@@ -34,6 +34,14 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={[
+        {
+          rel: "alternate",
+          type: "application/rss+xml",
+          title: "Subscribe to What's New on Open Blog",
+          href: "http://open-blog.dev/rss.xml",
+        },
+      ]}
       meta={[
         {
           name: `description`,

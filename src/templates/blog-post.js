@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import { ArticleList } from "../components/articleList"
 import AuthorBox from "../components/authorBox"
+import { PostSeo } from "../components/postSeo"
 
 // eslint-disable-next-line react/prop-types
 export default ({
@@ -12,16 +12,7 @@ export default ({
 }) => {
   return (
     <Layout>
-      <Helmet
-        htmlAttributes={{
-          lang: currentArticle.frontmatter.lang || "en",
-        }}
-        title={currentArticle.frontmatter.title}
-      >
-        {currentArticle.frontmatter.canonical && (
-          <link rel="canonical" href={currentArticle.frontmatter.canonical} />
-        )}
-      </Helmet>
+      <PostSeo article={currentArticle} />
 
       {currentArticle.frontmatter.hero && (
         <img
@@ -57,10 +48,14 @@ export const query = graphql`
         title
         lang
         canonical
+        description
         hero {
           childImageSharp {
             fluid(maxWidth: 700) {
               ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+            fixed {
+              src
             }
           }
         }
