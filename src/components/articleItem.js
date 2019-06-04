@@ -16,8 +16,7 @@ const ArticleItem = ({ node }) => (
           margin: "0.5rem 0",
         }}
       >
-        {langs[node.frontmatter.lang] || langs.en} {node.frontmatter.title}{" "}
-        <span>— {node.frontmatter.date}</span>
+        {langs[node.frontmatter.lang] || langs.en} {node.frontmatter.title}
       </h3>
       <span>
         {node.frontmatter.tags.map((tag, index) => (

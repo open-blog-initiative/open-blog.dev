@@ -8,6 +8,7 @@ title: Creating an image lazy loading component with React
 description: In the web world, we often have complex page structure.
   All the parts are not visible in the user viewport at first.
   Why should we load all the page content to be able to see it ?
+hero: ./assets/lazy-load.jpg
 tags:
   - react
   - perfs
@@ -23,8 +24,6 @@ By default, the browser load images in the lower part of you website, even if th
 It could slow down the performance of your website.
 
 **Every website audit tool will ask you to set up lazy loading on images. But how to do it with React ?**
-
-![example of image lazy loading](https://open-blog.dev/Slashgear/lazy-load.gif)
 
 ## Example with a pictures grid
 

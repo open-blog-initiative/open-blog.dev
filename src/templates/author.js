@@ -2,12 +2,13 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { ArticleList } from "../components/articleList"
+import AuthorBox from "../components/authorBox"
 
 // eslint-disable-next-line react/prop-types
 export default ({ data, pageContext }) => {
   return (
     <Layout>
-      <h1>Articles from "{pageContext.pseudo}"</h1>
+      <AuthorBox author={data.author} />
       <ArticleList articleList={data.allMarkdownRemark.edges} />
     </Layout>
   )
@@ -32,6 +33,15 @@ export const query = graphql`
           }
           excerpt
         }
+      }
+    }
+    author: github {
+      user(login: $pseudo) {
+        name
+        login
+        url
+        bioHTML
+        avatarUrl
       }
     }
   }

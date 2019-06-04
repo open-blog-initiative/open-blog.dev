@@ -3,33 +3,46 @@ import { graphql } from "gatsby"
 import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import { ArticleList } from "../components/articleList"
+import AuthorBox from "../components/authorBox"
 
 // eslint-disable-next-line react/prop-types
-export default ({ data }) => {
-  const post = data.currentArticle
-  const canonical = post.frontmatter.canonical
+export default ({
+  data: { currentArticle, author, lastArticles },
+  pageContext,
+}) => {
   return (
     <Layout>
       <Helmet
         htmlAttributes={{
-          lang: post.frontmatter.lang || "en",
+          lang: currentArticle.frontmatter.lang || "en",
         }}
+        title={currentArticle.frontmatter.title}
       >
-        {canonical && <link rel="canonical" href={canonical} />}
+        {currentArticle.frontmatter.canonical && (
+          <link rel="canonical" href={currentArticle.frontmatter.canonical} />
+        )}
       </Helmet>
+
+      {currentArticle.frontmatter.hero && (
+        <img
+          style={{ width: "100vw", maxHeight: "50vh", objectFit: "contain" }}
+          {...currentArticle.frontmatter.hero.childImageSharp.fluid}
+          alt="hero"
+        />
+      )}
       <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <h1>{currentArticle.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: currentArticle.html }} />
       </div>
 
       <hr />
 
-      <img src={data.author.user.avatarUrl} alt={data.author.user.name} />
+      {pageContext.pseudo && <AuthorBox author={author} />}
 
-      {data.lastArticles.totalCount && (
+      {!!lastArticles.totalCount && (
         <aside>
-          <h2>Other articles from this author</h2>
-          <ArticleList articleList={data.lastArticles.edges} />
+          <h3>Other articles from this author:</h3>
+          <ArticleList articleList={lastArticles.edges} />
         </aside>
       )}
     </Layout>
@@ -44,6 +57,13 @@ export const query = graphql`
         title
         lang
         canonical
+        hero {
+          childImageSharp {
+            fluid(maxWidth: 700) {
+              ...GatsbyImageSharpFluid_withWebp_noBase64
+            }
+          }
+        }
       }
     }
     lastArticles: allMarkdownRemark(
@@ -71,11 +91,9 @@ export const query = graphql`
     }
     author: github @include(if: $loadAuthor) {
       user(login: $pseudo) {
-        id
         name
-        location
+        login
         url
-        company
         bioHTML
         avatarUrl
       }

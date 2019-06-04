@@ -7,6 +7,7 @@ twitter_profile: Slashgear_
 date: 2019-03-24
 canonical: https://slashgear.github.io/posts/github-classroom/
 title: Github classroom, pourquoi vous devriez l'utiliser
+hero: ./assets/github-classroom-logo.jpg
 description:
   Lorsque j'ai commencé à enseigner en septembre dernier, je recherchais une solution
   pour pouvoir suivre facilement l'avancée des étudiants pendant leur TP. J'ai d'abord songé à leur
