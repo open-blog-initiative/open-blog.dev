@@ -7,12 +7,6 @@ export const PostSeo = ({ article }) => (
       lang: article.frontmatter.lang || "en",
     }}
     title={article.frontmatter.title}
-    link={[
-      {
-        rel: "canonical",
-        href: article.frontmatter.canonical,
-      },
-    ]}
     meta={[
       {
         name: `description`,

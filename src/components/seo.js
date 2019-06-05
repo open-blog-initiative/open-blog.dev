@@ -39,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
           rel: "alternate",
           type: "application/rss+xml",
           title: "Subscribe to What's New on Open Blog",
-          href: "http://open-blog.dev/rss.xml",
+          href: "https://open-blog.dev/rss.xml",
         },
       ]}
       meta={[
