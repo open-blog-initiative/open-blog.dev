@@ -35,12 +35,4 @@ If you want to publish an article here, take a look at the ["How to"](https://op
 
 If you have any idea to improve _Open blog_ globally, don't hesitate to open a discussion [Github issues](https://github.com/open-blog-initiative/open-blog.dev/issues/new) (Take 5 minutes to check if your idea has not been submitted yet).
 
-This publication is based on [Vuepress](https://v1.vuepress.vuejs.org/), your ideas could also be a great contribution to this project.
-
 Look at our ["Good first issue"](https://github.com/open-blog-initiative/open-blog.dev/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) list if you are looking for an idea.
-
-### Translate content
-
-A great way to contribute to _Open blog_ is to translate any blog post to your local.
-Check Vuepress [documentation about internationalization](https://v1.vuepress.vuejs.org/guide/i18n.html#site-level-i18n-config) to see how to do it.
-Follow the [How to](#how-to) section.
