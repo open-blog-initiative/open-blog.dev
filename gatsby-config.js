@@ -61,7 +61,9 @@ module.exports = {
           `gatsby-remark-relative-images`,
           {
             resolve: `gatsby-remark-images`,
-            options: {},
+            options: {
+              withWebp: true,
+            },
           },
           "gatsby-remark-prismjs",
         ],

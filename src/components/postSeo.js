@@ -41,7 +41,13 @@ export const PostSeo = ({ article }) => (
         content: article.frontmatter.description,
       },
       {
-        name: `og:image`,
+        property: `og:image`,
+        content:
+          article.frontmatter.hero &&
+          article.frontmatter.hero.childImageSharp.fixed.src,
+      },
+      {
+        property: `og:url`,
         content:
           article.frontmatter.hero &&
           article.frontmatter.hero.childImageSharp.fixed.src,
