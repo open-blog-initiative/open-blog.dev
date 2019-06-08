@@ -3,11 +3,19 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import { ArticleList } from "../components/articleList"
 import AuthorBox from "../components/authorBox"
+import { Helmet } from "react-helmet"
 
 // eslint-disable-next-line react/prop-types
-export default ({ data, pageContext }) => {
+export default ({ data }) => {
   return (
     <Layout>
+      <Helmet
+        title={`${data.author.user.name} (${
+          data.author.user.login
+        }) | Open Blog`}
+      >
+        <meta name="description" content={data.author.user.bio} />
+      </Helmet>
       <AuthorBox author={data.author} />
       <ArticleList articleList={data.allMarkdownRemark.edges} />
     </Layout>
@@ -27,6 +35,13 @@ export const query = graphql`
             tags
             author
             pseudo
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fields {
             slug
@@ -40,6 +55,7 @@ export const query = graphql`
         name
         login
         url
+        bio
         bioHTML
         avatarUrl
       }

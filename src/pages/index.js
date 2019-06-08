@@ -29,6 +29,13 @@ export const query = graphql`
             tags
             author
             pseudo
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fields {
             slug

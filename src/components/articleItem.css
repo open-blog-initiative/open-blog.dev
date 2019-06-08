@@ -1,3 +1,25 @@
+.article-item {
+  display: flex;
+}
+
+.article-item > header {
+  margin-right: 0.5rem;
+}
+
+.article-item > picture {
+  align-self: center;
+  flex-grow: 0;
+  max-width: 200px;
+  height: 100%;
+  width: 100%;
+}
+
 .article-item__title:hover {
   color: #3f51b5;
+}
+
+@media screen and (max-width: 640px) {
+  .article-item__picture {
+    display: none;
+  }
 }

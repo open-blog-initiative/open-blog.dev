@@ -15,11 +15,27 @@ export default ({
       <PostSeo article={currentArticle} />
 
       {currentArticle.frontmatter.hero && (
-        <img
-          style={{ width: "100vw", maxHeight: "50vh", objectFit: "contain" }}
-          {...currentArticle.frontmatter.hero.childImageSharp.fluid}
-          alt="hero"
-        />
+        <picture>
+          <source
+            srcSet={
+              currentArticle.frontmatter.hero.childImageSharp.fluid.srcSetWebp
+            }
+            sizes="(max-width: 600px) 100vw, 600px"
+            type="image/webp"
+          />
+          <source
+            srcSet={
+              currentArticle.frontmatter.hero.childImageSharp.fluid.srcSet
+            }
+            sizes="(max-width: 600px) 100vw, 600px"
+            type="image/png"
+          />
+          <img
+            style={{ width: "100vw", maxHeight: "50vh", objectFit: "cover" }}
+            src={currentArticle.frontmatter.hero.childImageSharp.fluid.src}
+            alt="hero"
+          />
+        </picture>
       )}
       <div>
         <h1>{currentArticle.frontmatter.title}</h1>
@@ -75,6 +91,13 @@ export const query = graphql`
             tags
             author
             pseudo
+            hero {
+              childImageSharp {
+                fluid(maxWidth: 200) {
+                  ...GatsbyImageSharpFluid_withWebp_noBase64
+                }
+              }
+            }
           }
           fields {
             slug
