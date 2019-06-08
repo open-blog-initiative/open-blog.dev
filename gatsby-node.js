@@ -47,6 +47,14 @@ exports.createPages = ({ graphql, actions }) => {
           loadAuthor: !!node.frontmatter.pseudo,
         },
       })
+
+      createPage({
+        path: `${node.fields.slug}amp`,
+        component: path.resolve("./src/templates/blog-post.amp.js"),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
     })
   })
 

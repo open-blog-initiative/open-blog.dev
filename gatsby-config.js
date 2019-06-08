@@ -70,8 +70,36 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-amp`,
+      options: {
+        components: ["amp-img", "amp-iframe"],
+        pathIdentifier: "/amp/",
+        canonicalBaseUrl: "https://open-blog.dev",
+      },
+    },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage(filter: {path: {regex: "/.*(?<!amp)$/"}}) {
+            edges {
+              node {
+                path
+              }
+            }
+          }
+      }`,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
