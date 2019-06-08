@@ -45,6 +45,7 @@ module.exports = {
         background_color: `#3f51b5`,
         theme_color: `#3f51b5`,
         display: `minimal-ui`,
+        icon: "./src/images/logo.svg",
       },
     },
     {
@@ -95,13 +96,16 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  image:
+                    site.siteMetadata.siteUrl +
+                    edge.node.frontmatter.hero.childImageSharp.fluid.src,
                 })
               })
             },
             query: `
               {
                 allMarkdownRemark(
+                  filter: { frontmatter: { type: { ne: "doc" } } }
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {
@@ -112,6 +116,13 @@ module.exports = {
                       frontmatter {
                         title
                         date
+                         hero {
+                        childImageSharp {
+                          fluid(maxWidth: 200) {
+                            src
+                          }
+                        }
+                      }
                       }
                     }
                   }

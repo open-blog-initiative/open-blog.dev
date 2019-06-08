@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet"
 export default ({ data, pageContext }) => {
   return (
     <Layout>
-      <Helmet title={`${pageContext.tag}| Open Blog`}>
+      <Helmet title={`${pageContext.tag} | Open Blog`}>
         <meta
           name="description"
           content={`List of blog posts about ${pageContext.tag}.`}

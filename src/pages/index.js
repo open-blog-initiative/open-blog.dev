@@ -3,10 +3,12 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { ArticleList } from "../components/articleList"
+import { Presentation } from "../components/presentation"
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+    <Presentation />
     <h2>Last blog posts :</h2>
     <ArticleList articleList={data.allMarkdownRemark.edges} />
   </Layout>
