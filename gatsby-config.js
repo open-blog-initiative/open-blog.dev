@@ -74,7 +74,6 @@ module.exports = {
       resolve: `gatsby-plugin-amp`,
       options: {
         components: ["amp-img", "amp-iframe"],
-        pathIdentifier: "/amp/",
         canonicalBaseUrl: "https://open-blog.dev",
       },
     },
