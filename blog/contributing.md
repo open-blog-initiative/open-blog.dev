@@ -1,8 +1,9 @@
 ---
 type: doc
+commentIssueId: 31
+title: Contributing
+description: This page explains how to contribute to Open blog by publishing your own content in it.
 ---
-
-# Contributing
 
 Open blog is before all an open source project to share a publication of blog posts with the community.
 
@@ -46,6 +47,7 @@ tags: # array of tags to help users find your blog posts (max 3)
   - teaching
   - foo
   - bar
+commentIssueId: 31 # Id of a issue that will keep comments about your post
 ---
 ```
 

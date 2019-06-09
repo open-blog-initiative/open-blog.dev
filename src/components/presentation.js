@@ -9,8 +9,8 @@ export const Presentation = () => (
     <p>
       Open blog is here for <b>authors</b> that desire the advantages of a
       publication like <i>Medium</i> or <i>Dev.to</i> but without letting your
-      readers paying the price with their privacy or their wallet. Feel free to{" "}
-      <b>submit</b> your blog post to this publication.
+      users pay the price. Feel free to <b>submit</b> your blog post to this
+      publication.
     </p>
 
     <p>
@@ -18,5 +18,19 @@ export const Presentation = () => (
       their own blog. Open Blog is a <b>publication</b> to help people finding
       great articles to read.
     </p>
+
+    <h2>Available features :</h2>
+
+    <ul>
+      <li>
+        Post <em>tags</em> to groups articles
+      </li>
+      <li>
+        <em>Author page</em>, to let discover author other articles
+      </li>
+      <li>
+        Comments based on <em>Github Issue</em>
+      </li>
+    </ul>
   </section>
 )

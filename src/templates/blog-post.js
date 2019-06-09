@@ -4,10 +4,11 @@ import Layout from "../components/layout"
 import { ArticleList } from "../components/articleList"
 import AuthorBox from "../components/authorBox"
 import { PostSeo } from "../components/postSeo"
+import { CommentList } from "../components/commentList"
 
 // eslint-disable-next-line react/prop-types
 export default ({
-  data: { currentArticle, author, lastArticles },
+  data: { currentArticle, author, lastArticles, comments },
   pageContext,
 }) => {
   return (
@@ -46,6 +47,13 @@ export default ({
 
       {pageContext.pseudo && <AuthorBox author={author} />}
 
+      {pageContext.showComment && (
+        <CommentList
+          comments={comments.repository.issue.comments.edges}
+          url={comments.repository.issue.url}
+        />
+      )}
+
       {!!lastArticles.totalCount && (
         <aside>
           <h3>Other articles from this author:</h3>
@@ -57,7 +65,13 @@ export default ({
 }
 
 export const query = graphql`
-  query($slug: String!, $pseudo: String!, $loadAuthor: Boolean!) {
+  query(
+    $slug: String!
+    $pseudo: String!
+    $loadAuthor: Boolean!
+    $commentIssueId: Int!
+    $showComment: Boolean!
+  ) {
     currentArticle: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -114,6 +128,33 @@ export const query = graphql`
         url
         bioHTML
         avatarUrl
+      }
+    }
+    comments: github @include(if: $showComment) {
+      repository(name: "open-blog.dev", owner: "open-blog-initiative") {
+        id
+        issue(number: $commentIssueId) {
+          id
+          comments(first: 15) {
+            edges {
+              node {
+                id
+                author {
+                  avatarUrl
+                  login
+                  url
+                  ... on GitHub_User {
+                    id
+                    email
+                    name
+                  }
+                }
+                bodyHTML
+              }
+            }
+          }
+          url
+        }
       }
     }
   }

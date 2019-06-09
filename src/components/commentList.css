@@ -1,0 +1,13 @@
+.comment-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-list__action {
+  align-self: center;
+  display: block;
+  padding: 0.8rem;
+  background-color: #3f51b5;
+  color: white;
+  text-decoration: none;
+}

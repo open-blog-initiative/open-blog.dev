@@ -31,6 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               pseudo
+              commentIssueId
             }
           }
         }
@@ -45,6 +46,8 @@ exports.createPages = ({ graphql, actions }) => {
           slug: node.fields.slug,
           pseudo: node.frontmatter.pseudo || "",
           loadAuthor: !!node.frontmatter.pseudo,
+          commentIssueId: node.frontmatter.commentIssueId || 0,
+          showComment: !!node.frontmatter.commentIssueId,
         },
       })
     })
