@@ -19,7 +19,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .article-item__picture {
+  .article-item > picture {
     display: none;
   }
 }
