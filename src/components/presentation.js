@@ -4,8 +4,8 @@ import "./presentation.css"
 
 export const Presentation = () => (
   <section className="presentation">
+    <img src="/icons/icon-384x384.png" alt="logo" />
     <h1>What is Open Blog ?</h1>
-
     <p>
       Open blog is here for <b>authors</b> that desire the advantages of a
       publication like <i>Medium</i> or <i>Dev.to</i> but without letting your

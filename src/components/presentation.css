@@ -1,5 +1,12 @@
 .presentation {
+  display: flex;
+  flex-direction: column;
   font-size: 1.2rem;
+}
+
+.presentation img {
+  object-fit: contain;
+  height: 144px;
 }
 
 .presentation h1 {
