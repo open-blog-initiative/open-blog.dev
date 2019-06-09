@@ -70,13 +70,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-amp`,
-      options: {
-        components: ["amp-img", "amp-iframe"],
-        canonicalBaseUrl: "https://open-blog.dev",
-      },
-    },
     `gatsby-plugin-offline`,
     {
       resolve: "gatsby-plugin-sitemap",
