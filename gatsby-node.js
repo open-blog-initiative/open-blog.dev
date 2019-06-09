@@ -59,7 +59,7 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(result => {
     result.data.allMarkdownRemark.distinct.forEach(pseudo => {
       createPage({
-        path: pseudo,
+        path: `authors/${pseudo}`,
         component: path.resolve(`./src/templates/author.js`),
         context: {
           pseudo,

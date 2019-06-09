@@ -71,27 +71,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    {
-      resolve: "gatsby-plugin-sitemap",
-      options: {
-        query: `
-        {
-          site {
-            siteMetadata {
-              siteUrl
-            }
-          }
-
-          allSitePage(filter: {path: {regex: "/.*(?<!amp)$/"}}) {
-            edges {
-              node {
-                path
-              }
-            }
-          }
-      }`,
-      },
-    },
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-feed`,
       options: {

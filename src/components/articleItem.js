@@ -33,7 +33,9 @@ const ArticleItem = ({ node }) => (
             </Link>
           ))}
           &nbsp;by{" "}
-          <Link to={node.frontmatter.pseudo}>{node.frontmatter.author}</Link>
+          <Link to={`authors/${node.frontmatter.pseudo}`}>
+            {node.frontmatter.author}
+          </Link>
         </span>
         <p>{node.excerpt}</p>
       </header>
