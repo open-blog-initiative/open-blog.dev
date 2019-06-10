@@ -20,7 +20,7 @@ export const PostSeo = ({ article }) => {
       htmlAttributes={{
         lang: article.frontmatter.lang || "en",
       }}
-      title={article.frontmatter.title}
+      title={`${article.frontmatter.title} |  Open blog`}
       meta={[
         {
           name: `description`,
@@ -62,6 +62,32 @@ export const PostSeo = ({ article }) => {
               article.frontmatter.hero.childImageSharp.fixed.src,
         },
       ]}
-    />
+    >
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          headline: article.frontmatter.title,
+          image:
+            article.frontmatter.hero &&
+            site.siteMetadata.siteUrl +
+              article.frontmatter.hero.childImageSharp.fixed.src,
+          author: article.frontmatter.author,
+          keywords:
+            article.frontmatter.tags && article.frontmatter.tags.join(", "),
+          publisher: "Open Blog",
+          url:
+            article.frontmatter.pseudo &&
+            `http://open-blog.dev/${article.frontmatter.pseudo}/${
+              article.fields.slug
+            }`,
+          wordcount: article.wordCount.word,
+          datePublished: article.frontmatter.date,
+          dateCreated: article.frontmatter.date,
+          dateModified: article.frontmatter.date,
+          description: article.frontmatter.description,
+        })}
+      </script>
+    </Helmet>
   )
 }

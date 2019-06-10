@@ -78,7 +78,10 @@ export const query = graphql`
         title
         lang
         canonical
+        author
         description
+        date(formatString: "DD MMMM, YYYY")
+        tags
         hero {
           childImageSharp {
             fluid(maxWidth: 700) {
@@ -89,6 +92,12 @@ export const query = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
+      }
+      wordCount {
+        words
       }
     }
     lastArticles: allMarkdownRemark(
