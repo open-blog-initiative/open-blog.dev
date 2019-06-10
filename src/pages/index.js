@@ -5,9 +5,16 @@ import SEO from "../components/seo"
 import { ArticleList } from "../components/articleList"
 import { Presentation } from "../components/presentation"
 
+const logoAbsoluteUrl = `https://open-blog.dev/icons/icon-384x384.png`
+
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO
+      title="Home"
+      description={`Open blog is here for authors that desire the advantages of a publication like Medium or Dev.to
+       but without letting your users pay the price. Feel free to submit your blog post to this publication.`}
+      image={logoAbsoluteUrl}
+    />
     <Presentation />
     <h2>Last blog posts :</h2>
     <ArticleList articleList={data.allMarkdownRemark.edges} />
