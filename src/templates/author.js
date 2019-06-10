@@ -15,6 +15,10 @@ export default ({ data }) => {
         }) | Open Blog`}
       >
         <meta name="description" content={data.author.user.bio} />
+        <meta name="og:description" content={data.author.user.bio} />
+        <meta property="og:image" content={data.author.user.avatarUrl} />
+        <meta name="twitter:image" content={data.author.user.avatarUrl} />
+        <meta name="twitter:card" content="summary" />
       </Helmet>
       <AuthorBox author={data.author} />
       <ArticleList articleList={data.allMarkdownRemark.edges} />
