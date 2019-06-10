@@ -39,8 +39,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Open Blog: Web free publication`,
+        short_name: `Open Blog`,
         start_url: `/`,
         background_color: `#3f51b5`,
         theme_color: `#3f51b5`,
