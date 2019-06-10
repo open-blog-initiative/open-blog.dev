@@ -14,7 +14,20 @@ export default ({ data }) => {
           data.author.user.login
         }) | Open Blog`}
       >
+        <meta
+          name="og:title"
+          content={`${data.author.user.name} (${
+            data.author.user.login
+          }) | Open Blog`}
+        />
+        <meta
+          name="twitter:title"
+          content={`${data.author.user.name} (${
+            data.author.user.login
+          }) | Open Blog`}
+        />
         <meta name="description" content={data.author.user.bio} />
+        <meta name="twitter:description" content={data.author.user.bio} />
         <meta name="og:description" content={data.author.user.bio} />
         <meta property="og:image" content={data.author.user.avatarUrl} />
         <meta name="twitter:image" content={data.author.user.avatarUrl} />
