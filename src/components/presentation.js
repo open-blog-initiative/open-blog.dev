@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import "./presentation.css"
 
@@ -32,5 +33,9 @@ export const Presentation = () => (
         Comments based on <em>Github Issue</em>
       </li>
     </ul>
+
+    <p>
+      Any question ? look at our <Link to="contributing">author guide</Link>
+    </p>
   </section>
 )

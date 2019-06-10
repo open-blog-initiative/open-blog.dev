@@ -1,13 +1,13 @@
 ---
 type: doc
 commentIssueId: 31
-title: Contributing
+title: Contribute
 description: This page explains how to contribute to Open blog by publishing your own content in it.
 ---
 
 Open blog is before all an open source project to share a publication of blog posts with the community.
 
-> **"Developed by the community for everyone freely"**
+> **"Developed by the community for everyone, freely without tracking or ads"**
 
 ## Share your blog posts
 
@@ -35,8 +35,6 @@ At the beginning of you blog post, you must define `frontmatter` block to add me
 type: post
 author: Antoine CARON # Required
 pseudo: Slashgear # If you have one
-github_profile: Slashgear # will display github icon link to you profile
-twitter_profile: Slashgear_ # will display twitter icon link to you profile
 date: 2017-07-04 # A valid date corresponding to the publish date
 canonical: https://example.com # If your blog post is published elsewhere, indicate it here
 title: Exemple title # Required
@@ -93,6 +91,63 @@ GITHUB_TOKEN=<your generated token>
 ```sh
 yarn start
 ```
+
+## Question and answer
+
+- **Should I share content I don't directly own ?**
+
+  No you can't, the only one who can is the author.
+
+- **Can I use GIF in my articles ?**
+
+  Not for now sorry :'(
+
+- **Can I share my article on my own blog ?**
+
+  Yes, of course, that is the model we are defending **POSSE: Publish (on your) Own Site, Syndicate Elsewhere**.
+  Make sure you define `canonical` in _frontmatter_ part of your blog post here targeting your blog post page.
+  This will prevent a duplicate content error.
+
+- **How can I submit my ideas and comments ?**
+
+  Just open an issue ! https://github.com/open-blog-initiative/open-blog.dev/issues/new
+
+- **How can I add "comments section" in my blog post ?**
+
+  Just add `commentIssueId` with id of an existing github issue in https://github.com/open-blog-initiative/open-blog.dev to let your readers exchange with you.
+
+- **Can I remove my blog post ?**
+
+  If you are the author, yes of course.
+
+- **Will you ever move my content without asking ?**
+
+  No way !
+
+- **I don't have Github account, how can I add a blog post ?**
+
+  You actually can't open a `Pull request` on this project without a github account.
+
+- **Can I use a Github organisation as an author?**
+
+  Yes, of course. Submitter should be member of the organisation.
+
+- **How can I move my Medium content to Open Blog ?**
+
+  Like many authors, if you want to avoid your readers getting stuck behind a paywall, you can simply export your article in Markdown format with this [tool](https://www.npmjs.com/package/mediumexporter).
+
+- **Can my article be rejected ?**
+
+  Yes, unfortunately if your article does not respect the rules it can be rejected.
+  For example, if your article just contains an advertisement for your company, we let ourselves the right to refuse it.
+
+- **Can I correct a typography ?**
+
+  Of course, but try as much as possible not to submit an article with typos.
+
+- **Can I share my old blog post ?**
+
+  There is no concept of old blog post when it is really great to read.
 
 ## Make "Open Blog" a better place
 
