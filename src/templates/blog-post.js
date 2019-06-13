@@ -8,7 +8,7 @@ import { CommentList } from "../components/commentList"
 
 // eslint-disable-next-line react/prop-types
 export default ({
-  data: { currentArticle, author, lastArticles, comments },
+  data: { currentArticle, author, orga, lastArticles, comments },
   pageContext,
 }) => {
   return (
@@ -45,7 +45,9 @@ export default ({
 
       <hr />
 
-      {pageContext.pseudo && <AuthorBox author={author} />}
+      {pageContext.pseudo && (
+        <AuthorBox author={pageContext.loadOrga ? orga : author} />
+      )}
 
       {pageContext.showComment && (
         <CommentList
@@ -71,6 +73,8 @@ export const query = graphql`
     $loadAuthor: Boolean!
     $commentIssueId: Int!
     $showComment: Boolean!
+    $loadOrga: Boolean!
+    $orga: String!
   ) {
     currentArticle: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
@@ -137,6 +141,18 @@ export const query = graphql`
         url
         bioHTML
         avatarUrl
+      }
+    }
+    orga: github @include(if: $loadOrga) {
+      user: repositoryOwner(login: $orga) {
+        ... on GitHub_Organization {
+          id
+          description
+          name
+          url
+          avatarUrl
+          login
+        }
       }
     }
     comments: github @include(if: $showComment) {

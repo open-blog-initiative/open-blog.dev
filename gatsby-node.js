@@ -32,6 +32,7 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               pseudo
               commentIssueId
+              isOrga
             }
           }
         }
@@ -45,9 +46,11 @@ exports.createPages = ({ graphql, actions }) => {
         context: {
           slug: node.fields.slug,
           pseudo: node.frontmatter.pseudo || "",
-          loadAuthor: !!node.frontmatter.pseudo,
+          loadAuthor: !!node.frontmatter.pseudo && !node.frontmatter.isOrga,
           commentIssueId: node.frontmatter.commentIssueId || 0,
           showComment: !!node.frontmatter.commentIssueId,
+          loadOrga: !!node.frontmatter.isOrga,
+          orga: node.frontmatter.pseudo || "",
         },
       })
     })
@@ -55,7 +58,12 @@ exports.createPages = ({ graphql, actions }) => {
 
   graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { frontmatter: { isOrga: { ne: true } } }) {
+        distinct(field: frontmatter___pseudo)
+      }
+      orga: allMarkdownRemark(
+        filter: { frontmatter: { isOrga: { eq: true } } }
+      ) {
         distinct(field: frontmatter___pseudo)
       }
     }
@@ -66,6 +74,20 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve(`./src/templates/author.js`),
         context: {
           pseudo,
+          orga: "",
+          loadOrga: false,
+        },
+      })
+    })
+
+    result.data.orga.distinct.forEach(orga => {
+      createPage({
+        path: `authors/${orga}`,
+        component: path.resolve(`./src/templates/author.js`),
+        context: {
+          pseudo: orga,
+          orga,
+          loadOrga: true,
         },
       })
     })
