@@ -105,7 +105,10 @@ export const query = graphql`
       }
     }
     lastArticles: allMarkdownRemark(
-      filter: { frontmatter: { pseudo: { eq: $pseudo } } }
+      filter: {
+        frontmatter: { pseudo: { eq: $pseudo } }
+        fields: { slug: { ne: $slug } }
+      }
       limit: 5
     ) {
       edges {
