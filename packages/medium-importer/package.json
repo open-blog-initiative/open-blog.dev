@@ -1,0 +1,20 @@
+{
+  "name": "@open-blog/medium-importer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-blog-initiative/open-blog.dev/packages/medium-importer"
+  },
+  "bin": {
+    "medium": "./index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "pretty-quick": "^1.9.0",
+    "sanitize-filename": "^1.6.1",
+    "lodash": "^4.17.11"
+  },
+  "author": "Antoine Caron <antoine.caron@zenika.com>",
+  "license": "MIT"
+}

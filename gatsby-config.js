@@ -97,12 +97,14 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  enclosure: {
-                    url:
-                      site.siteMetadata.siteUrl +
-                      edge.node.frontmatter.hero.childImageSharp.fluid.src,
-                    size: edge.node.frontmatter.hero.size,
-                  },
+                  enclosure: edge.node.frontmatter.hero
+                    ? {
+                        url:
+                          site.siteMetadata.siteUrl +
+                          edge.node.frontmatter.hero.childImageSharp.fluid.src,
+                        size: edge.node.frontmatter.hero.size,
+                      }
+                    : null,
                   categories: edge.node.frontmatter.tags,
                   author: edge.node.frontmatter.author,
                 })

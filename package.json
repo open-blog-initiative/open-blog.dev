@@ -1,5 +1,5 @@
 {
-  "name": "open-blog.dev",
+  "name": "@open-blog/blog",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,9 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
+  "workspaces": [
+    "./packages/**/*"
+  ],
   "dependencies": {
     "dotenv": "^8.0.0",
     "gatsby": "^2.8.2",
@@ -41,24 +44,21 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@open-blog/medium-importer": "1.0.0",
     "chalk": "2.4.2",
     "husky": "1.3.1",
-    "prettier": "^1.17.1",
-    "pretty-quick": "^1.9.0"
+    "prettier": "^1.17.1"
   },
   "keywords": [
-    "gatsby"
+    "blog",
+    "gastby"
   ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}  *.js",
-    "lint": "prettier -c src/**/*.{js,jsx}",
+    "format": "prettier --write src/**/*.{js,jsx} blog/**/*.{md} packages/**/*.{js,md} *.js",
+    "lint": "prettier -c src/**/*.{js,jsx} blog/**/*.{md} packages/**/*.{js,md}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "serve": "gatsby serve"
   }
 }
