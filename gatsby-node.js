@@ -5,6 +5,33 @@
  */
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const chalk = require("chalk")
+
+const shouldQueryGithub = !!process.env.GITHUB_TOKEN
+
+if (!shouldQueryGithub) {
+  console.log(
+    chalk.red(
+      "-----------------------------------------------------------------"
+    )
+  )
+  console.log("\n")
+  console.log(
+    chalk.red(`You have to define GITHUB_TOKEN env to make it work.\n`)
+  )
+  console.log(
+    chalk.red(
+      `Follow https://open-blog.dev/contributing documentation to see how to make it work locally`
+    )
+  )
+  console.log("\n")
+  console.log(
+    chalk.red(
+      "-----------------------------------------------------------------"
+    )
+  )
+  process.exit(0)
+}
 
 // You can delete this file if you're not using it
 exports.onCreateNode = ({ node, getNode, actions }) => {
