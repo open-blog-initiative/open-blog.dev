@@ -17,6 +17,8 @@ tags:
 
 Les 23 et 24 mai, j'étais présent à [MixIT 2019](https://mixitconf.org/2019/), pour une présentation intitulée **« Migration de 6play vers Le Cloud, retour d’expérience »**. Puisque ma conférence n'a pas été enregistrée, voici une tentative de _transcript_, en espérant qu'il vous sera utile.
 
+_Cet article est re-publié depuis [mon blog](https://blog.pascal-martin.fr/)._
+
 Vous trouverez en-dessous de chaque _slide_ le texte correspondant, éventuellement enrichi de quelques informations que je n'ai pas données lors de la présentation, puisque celle-ci ne durait que 50 minutes questions incluses. Le style est volontairement assez proche de l'oral.
 
 ![Slide n°001](./retour-experience-migration-cloud-6play-mixit-2019/slide-001.png)
@@ -568,5 +570,7 @@ Si ça vous intéresse, et je pense que ça vous intéressera, j'ai déjà publi
 <br>
 
 Je m'appelle Pascal Martin, je suis Lead DevOps chez M6 à Lyon. J'espère que vous avez appris des choses pendant la petite heure que nous avons passée ensemble et je vous remercie pour votre attention !
+
+Pour d'autres articles, n'hésitez pas à consulter [mon blog](https://blog.pascal-martin.fr/). Vous pouvez aussi me trouver sur [@pascal_martin](https://twitter.com/pascal_martin).
 
 <br>
