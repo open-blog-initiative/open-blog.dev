@@ -11,12 +11,8 @@ hero: "./retour-experience-migration-cloud-6play-mixit-2019/slide-001.png"
 description: Le transcript de ma présentation « Migration de 6play vers Le Cloud, retour d’expérience » à MixIT 2019
 tags:
   - mixit
-  - m6
   - conference
-  - devops
   - cloud
-  - aws
-  - kubernetes
 ---
 
 Les 23 et 24 mai, j'étais présent à [MixIT 2019](https://mixitconf.org/2019/), pour une présentation intitulée **« Migration de 6play vers Le Cloud, retour d’expérience »**. Puisque ma conférence n'a pas été enregistrée, voici une tentative de _transcript_, en espérant qu'il vous sera utile.
