@@ -107,6 +107,7 @@ module.exports = {
                     size: edge.node.frontmatter.hero.size,
                   },
                   categories: edge.node.frontmatter.tags,
+                  author: edge.node.frontmatter.author,
                 })
               })
             },
@@ -124,6 +125,7 @@ module.exports = {
                         title
                         date
                         tags
+                        author
                          hero {
                         childImageSharp {
                           fluid(maxWidth: 200) {
