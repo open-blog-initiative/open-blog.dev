@@ -1,0 +1,697 @@
+<!DOCTYPE html><html lang="fr"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.a0772ad69aa4eeb5fd04.css">pre::-webkit-scrollbar{width:14px}pre::-webkit-scrollbar-track{background-color:#6272a4;border-radius:0}pre::-webkit-scrollbar-thumb{background-color:#bd93f9;border-radius:0}code[class*=language-],pre[class*=language-]{color:#ccc;background:#282936;text-shadow:none;font-family:PT Mono,Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background-color:#5a5f80}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background-color:#5a5f80}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{background:#282936!important;border-radius:.5em;padding:1em;margin:.5em 0;overflow:auto;height:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#282936}:not(pre)>code[class*=language-]{padding:4px 7px;border-radius:.3em;white-space:normal}.limit-300{height:300px!important}.limit-400{height:400px!important}.limit-500{height:500px!important}.limit-600{height:600px!important}.limit-700{height:700px!important}.limit-800{height:800px!important}.token.comment{color:#6272a4}.token.prolog{color:#cfcfc2}.token.tag{color:#dc68aa}.token.entity{color:#8be9fd}.token.atrule{color:#62ef75}.token.url{color:#66d9ef}.token.selector{color:#cfcfc2}.token.string{color:#f1fa8c}.token.property{color:#ffb86c}.token.important{color:#ff79c6;font-weight:700}.token.punctuation{color:#e6db74}.token.number{color:#bd93f9}.token.function{color:#50fa7b}.token.class-name{color:#ffb86c}.token.keyword{color:#ff79c6}.token.boolean{color:#ffb86c}.token.operator{color:#8be9fd}.token.char{color:#ff879d}.token.regex,.token.variable{color:#50fa7b}.token.constant,.token.symbol{color:#ffb86c}.token.builtin{color:#ff79c6}.token.attr-value{color:#7ec699}.token.deleted,.token.namespace{color:#e2777a}.token.bold{font-weight:700}.token.italic{font-style:italic}.token{color:#ff79c6}.langague-c .token.string,.langague-cpp .token.string{color:#8be9fd}.language-css .token.selector{color:#50fa7b}.language-css .token.property{color:#ffb86c}.language-java .token.class-name,.language-java span.token.class-name{color:#8be9fd}.language-markup .token.attr-value{color:#66d9ef}.language-markup .token.tag{color:#50fa7b}.language-objectivec .token.property{color:#66d9ef}.language-objectivec .token.string{color:#50fa7b}.language-php .token.boolean{color:#8be9fd}.language-php .token.function{color:#ff79c6}.language-php .token.keyword{color:#66d9ef}.language-ruby .token.symbol{color:#8be9fd}.language-ruby .token.class-name{color:#cfcfc2}pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}pre.line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;font-size:100%;left:-3.8em;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}div.code-toolbar{position:relative}div.code-toolbar>.toolbar{position:absolute;top:.3em;right:.2em;-webkit-transition:opacity .3s ease-in-out;transition:opacity .3s ease-in-out;opacity:0}div.code-toolbar:hover>.toolbar{opacity:1}div.code-toolbar>.toolbar .toolbar-item{display:inline-block;padding-right:20px}div.code-toolbar>.toolbar a{cursor:pointer}div.code-toolbar>.toolbar button{background:none;border:0;color:inherit;font:inherit;line-height:normal;overflow:visible;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}div.code-toolbar>.toolbar a,div.code-toolbar>.toolbar button,div.code-toolbar>.toolbar span{color:#ccc;font-size:.8em;padding:.5em;background:#6272a4;border-radius:.5em}div.code-toolbar>.toolbar a:focus,div.code-toolbar>.toolbar a:hover,div.code-toolbar>.toolbar button:focus,div.code-toolbar>.toolbar button:hover,div.code-toolbar>.toolbar span:focus,div.code-toolbar>.toolbar span:hover{color:inherit;text-decoration:none;background-color:var(--verde)}span.token>a{color:#f1fa8c}:not(pre)>code[class*=language-text],pre[class*=language-text]{background-color:#efefef;color:#282936}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.45em georgia,serif;box-sizing:border-box;overflow-y:scroll}*,:after,:before{box-sizing:inherit}body{color:rgba(0,0,0,.8);font-family:georgia,serif;font-weight:400;word-wrap:break-word;-webkit-font-kerning:normal;font-kerning:normal;-ms-font-feature-settings:"kern","liga","clig","calt";-webkit-font-feature-settings:"kern","liga","clig","calt";font-feature-settings:"kern","liga","clig","calt"}img{max-width:100%;padding:0;margin:0 0 1.45rem}h1{font-size:2.25rem}h1,h2{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h2{font-size:1.62671rem}h3{font-size:1.38316rem}h3,h4{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h4{font-size:1rem}h5{font-size:.85028rem}h5,h6{padding:0;margin:0 0 1.45rem;color:inherit;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;font-weight:700;text-rendering:optimizeLegibility;line-height:1.1}h6{font-size:.78405rem}hgroup{padding:0;margin:0 0 1.45rem}ol,ul{padding:0;margin:0 0 1.45rem 1.45rem;list-style-position:outside;list-style-image:none}dd,dl,figure,p{padding:0;margin:0 0 1.45rem}pre{margin:0 0 1.45rem;font-size:.85rem;line-height:1.42;background:rgba(0,0,0,.04);border-radius:3px;overflow:auto;word-wrap:normal;padding:1.45rem}table{font-size:1rem;line-height:1.45rem;border-collapse:collapse;width:100%}fieldset,table{padding:0;margin:0 0 1.45rem}blockquote{font-style:italic;padding:.5rem 1.45rem;margin:0 0 1.45rem;border-left:3px solid #3f51b5}form,iframe,noscript{padding:0;margin:0 0 1.45rem}hr{padding:0;margin:0 0 calc(1.45rem - 1px);background:rgba(0,0,0,.2);border:none;height:1px}address{padding:0;margin:0 0 1.45rem}b,dt,strong,th{font-weight:700}li{margin-bottom:.725rem}ol li,ul li{padding-left:0}li>ol,li>ul{margin-left:1.45rem;margin-bottom:.725rem;margin-top:.725rem}blockquote :last-child,li :last-child,p :last-child{margin-bottom:0}li>p{margin-bottom:.725rem}code,kbd,samp{font-size:.85rem;line-height:1.45rem}abbr,abbr[title],acronym{border-bottom:1px dotted rgba(0,0,0,.5);cursor:help}abbr[title]{text-decoration:none}td,th,thead{text-align:left}td,th{border-bottom:1px solid rgba(0,0,0,.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding:.725rem .96667rem calc(.725rem - 1px)}td:first-child,th:first-child{padding-left:0}td:last-child,th:last-child{padding-right:0}code,tt{background-color:rgba(0,0,0,.04);border-radius:3px;font-family:SFMono-Regular,Consolas,Roboto Mono,Droid Sans Mono,Liberation Mono,Menlo,Courier,monospace;padding:.2em 0}pre code{background:none;line-height:1.42}code:after,code:before,tt:after,tt:before{letter-spacing:-.2em;content:" "}pre code:after,pre code:before,pre tt:after,pre tt:before{content:""}@media only screen and (max-width:480px){html{font-size:100%}}.article-item{display:flex}.article-item>header{margin-right:.5rem}.article-item>picture{align-self:center;flex-grow:0;max-width:200px;height:100%;width:100%}.article-item__title:hover{color:#3f51b5}@media screen and (max-width:640px){.article-item>picture{display:none}}.author{display:flex;margin-bottom:2rem}.author>.author__description{padding-left:16px}.author__profile{width:100px;height:auto;border-radius:50%}.author__name{margin:0}.author__bio{margin:8px 0}.comment-item{display:flex;padding:.8rem;border:2px dotted #3f51b5;border-radius:4px}.comment-item__profile{width:40px;height:40px;border-radius:50%}.comment-item__name{font-size:1rem;font-weight:400;font-style:italic}.comment-item__description{margin-left:1rem}.comment-list{display:flex;flex-direction:column}.comment-list__action{align-self:center;display:block;padding:.8rem;background-color:#3f51b5;color:#fff;text-decoration:none;border-radius:4px;font-weight:700}.presentation{display:flex;flex-direction:column;font-size:1.2rem}.presentation img{-o-object-fit:contain;object-fit:contain;height:144px}.presentation h1{text-align:center}</style><meta name="generator" content="Gatsby 2.8.2"/><title data-react-helmet="true">Rancher - How to |  Open blog</title><meta data-react-helmet="true" name="description" content="I use the Rancher service for one of my projects. In order to share this cool discovery, I&#x27;ve made an article about &quot;How to deploy applications with Rancher&quot;"/><meta data-react-helmet="true" property="og:title" content="Rancher - How to"/><meta data-react-helmet="true" property="og:description" content="I use the Rancher service for one of my projects. In order to share this cool discovery, I&#x27;ve made an article about &quot;How to deploy applications with Rancher&quot;"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Antoine Caron"/><meta data-react-helmet="true" name="twitter:title" content="Rancher - How to"/><meta data-react-helmet="true" name="twitter:description" content="I use the Rancher service for one of my projects. In order to share this cool discovery, I&#x27;ve made an article about &quot;How to deploy applications with Rancher&quot;"/><meta data-react-helmet="true" property="og:image" content="https://open-blog.dev/static/79e7b4b3301dc3fc86bb65d797510f18/8539d/rancher.jpg"/><script data-react-helmet="true" type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Rancher - How to","image":"https://open-blog.dev/static/79e7b4b3301dc3fc86bb65d797510f18/8539d/rancher.jpg","author":"Antoine Caron","keywords":"devops, rancher, deploy","publisher":"Open Blog","datePublished":"13 June, 2016","dateCreated":"13 June, 2016","dateModified":"13 June, 2016","description":"I use the Rancher service for one of my projects. In order to share this cool discovery, I've made an article about \"How to deploy applications with Rancher\""}</script><link rel="shortcut icon" href="/icons/icon-48x48.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#3f51b5"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=48fdfc2a19f4008982a971a4393fc87b"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" title="Open blog" href="/rss.xml"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-a129a213008f02f05f32.js"/><link as="script" rel="preload" href="/1-176213520d534cda9cb6.js"/><link as="script" rel="preload" href="/app-596e68a8093cbd5c6bb9.js"/><link as="script" rel="preload" href="/styles-359065255d63fd2c3f9a.js"/><link as="script" rel="preload" href="/webpack-runtime-f655d488b2a1eb59506f.js"/><link as="fetch" rel="preload" href="/static/d/23/path---posts-slashgear-rancher-261-e97-Ck5nIhYHDJkqECV43iNDyf58RY.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group"><header style="background:#3f51b5;margin-bottom:1.45rem"><nav style="display:flex;align-items:baseline;justify-content:space-between;margin:0 auto;max-width:960px;padding:1rem 1.0875rem"><h1 style="margin:0"><a style="color:white;text-decoration:none" href="/">Open Blog</a></h1><h2 style="margin:0"><a style="color:white;text-decoration:none" href="/contributing">Contribute</a></h2></nav></header><div style="margin:0 auto;max-width:960px;padding:0px 1.0875rem 1.45rem;padding-top:0"><main><picture><source srcSet="/static/79e7b4b3301dc3fc86bb65d797510f18/4e245/rancher.webp 175w,
+/static/79e7b4b3301dc3fc86bb65d797510f18/e09c6/rancher.webp 350w,
+/static/79e7b4b3301dc3fc86bb65d797510f18/e86d5/rancher.webp 640w" sizes="(max-width: 600px) 100vw, 600px" type="image/webp"/><source srcSet="/static/79e7b4b3301dc3fc86bb65d797510f18/87c5e/rancher.jpg 175w,
+/static/79e7b4b3301dc3fc86bb65d797510f18/dec55/rancher.jpg 350w,
+/static/79e7b4b3301dc3fc86bb65d797510f18/47052/rancher.jpg 640w" sizes="(max-width: 600px) 100vw, 600px" type="image/png"/><img style="width:100vw;max-height:50vh;object-fit:cover" src="/static/79e7b4b3301dc3fc86bb65d797510f18/47052/rancher.jpg" alt="hero"/></picture><div><h1>Rancher - How to</h1><div><p>Mon expérience en tant que stagiaire chez Zenika m’a amené à utiliser
+Rancher pour orchestrer mes conteneurs Docker. Je vous présente ici un
+condensé de mon expérience avec cet outil, de son intérêt et de ses
+points forts, par le biais d’un petit “How to“ sur comment déployer son
+application ?</p>
+<p>On constate que de plus en plus d’utilisateurs Docker cherchent à
+manipuler plus facilement leurs conteneurs et à mettre en place du
+déploiement continu. L’environnement technique autour de la
+problématique d’orchestration des modèles CaaS (Container as a Service)
+est très large et il est parfois difficile de s’y retrouver.</p>
+<h2>Qu’en est-t-il de Rancher ?</h2>
+<h3>Késako</h3>
+<p>Rancher, projet open-source créé par la société Rancher Labs est un
+outil gratuit d’orchestration de conteneurs Docker. Il permet de
+facilement déployer des conteneurs Docker sur des machines possédant
+Docker. Grâce à une configuration simple et complète, il permet de lier
+ses conteneurs afin de composer des architectures de services aisément.
+Il peut déployer des containeurs sur des services cloud comme AWS,
+Azure, DigitalOcean mais aussi sur des machines personnalisées
+possédant Docker tout en s’appuyant sur docker-machine.</p>
+<h3>Une installation assez simple</h3>
+<p>Pour installer Rancher, à ce jour il suffit de posséder une machine
+linux 64-bit avec au moins 1GB de mémoire vive.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">$ <span class="token function">sudo</span> docker run -d --restart<span class="token operator">=</span>always -p 8080:8080 rancher/server</code></pre></div>
+<p>Après quelques minutes d’installation, le server Rancher est disponible
+sur le port 8080 de votre machine (l’image contient une base MySQL, un
+Zookeeper, Redis, et le serveur rancher). Vous pouvez vous y connecter
+car l’accès est par défaut ouvert à tous. Par la suite, vous pourrez
+activer l’authentification,et ainsi facilement configurer des comptes
+pour vos utilisateurs.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/7044fcf8b2240abbf24b959028a4f610/d01ad/environnement.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 47.45011086474501%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAABOklEQVQoz22QTU7DQAyFc0AW7JEQsOgp4CZdQ6uKI8AKobYrluyKaEmbpJlJYnt+MykOKSRSsb55evLIozeObu9fRrPlzWx5PV0wo19zOZlfTRcXD/NTzsbP5+Onu8fXCBARQCuqvWW867V2NjgXvA3eDbC5EHGardMsitP9ah1/ximQQqU7SBsGtCZjyFjU5u+KUcYaZ9lE1rmmaUIIh0Fp59+3Isml4Xkia+3hpKzz7fCw1TStFkCrbSal4ISsSqn/hyuiY9Q27RGltTFG/YRXxqDWLUrDIHyFFG0yuZOQlZiWkBY9SQE7WX0l+0wWsgKmBASiErFEVhJVFW3zYidKASRQlUoX1NN2kHN1i1S80RyoMww/FyW52CRZImQB6Ova+bbqENrD1YTO8yfXEidvHxViKiTHYb4BzX7wYutWWbQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/7044fcf8b2240abbf24b959028a4f610/50512/environnement.webp 163w,
+/static/7044fcf8b2240abbf24b959028a4f610/aeba0/environnement.webp 325w,
+/static/7044fcf8b2240abbf24b959028a4f610/001d9/environnement.webp 650w,
+/static/7044fcf8b2240abbf24b959028a4f610/97fd0/environnement.webp 975w,
+/static/7044fcf8b2240abbf24b959028a4f610/05607/environnement.webp 1300w,
+/static/7044fcf8b2240abbf24b959028a4f610/3be7f/environnement.webp 1353w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/7044fcf8b2240abbf24b959028a4f610/19bd1/environnement.png 163w,
+/static/7044fcf8b2240abbf24b959028a4f610/d3bcb/environnement.png 325w,
+/static/7044fcf8b2240abbf24b959028a4f610/dbb61/environnement.png 650w,
+/static/7044fcf8b2240abbf24b959028a4f610/6b691/environnement.png 975w,
+/static/7044fcf8b2240abbf24b959028a4f610/91670/environnement.png 1300w,
+/static/7044fcf8b2240abbf24b959028a4f610/d01ad/environnement.png 1353w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/7044fcf8b2240abbf24b959028a4f610/dbb61/environnement.png"
+          alt="Interface graphique de Rancher"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<h3>Déployer une application simple avec Rancher</h3>
+<p>Après l’IaaS, le SaaS, le PaaS, le DaaS et Patricia Kaas, voila
+maintenant venue l’ère du Caas (Container as a Service). L’objectif
+ici est de conteneuriser les services de son(ses) application(s) et de
+les faire interagir. Pour montrer simplement la mécanique de Rancher,
+j’ai choisi de vous présenter le déploiement d’une application web très
+simple nommée whoami, disponible sur le Docker Hub (développé en Go
+par Emile Vauge).</p>
+<p>Pour ce faire, je vais vous expliquer la méthode de création de
+services par l’interface graphique. Sachez que l’on peut interagir
+avec Rancher par l’intermédiaire d’un outil en ligne de commande
+(rancher-cli,encore très limité pour l’instant) ou d’API REST.</p>
+<h4>Ajouter des hosts sur lesquels déployer</h4>
+<p>Dans un premier temps il faut définir des machines sur lesquelles
+déployer votre application.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/09dee4224d527f5831843599f577d8b3/99445/machine.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 51.46750524109015%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABYElEQVQoz32QbUscMRDH9zP7vi/OQpF+mL4SqVXftVAo4sNJoRwUZc3tXmaSzEySfdTbZm+9UywKv4T5M/OfmST7fHT+4ehi//jq08n1wdl8dnw5+3q5fzL/eHrzFrNv870vPw8Of2UcQl/HYd1PrB/aMRge3+Vh6Ju+qTKumiGpx3W6fdv/1Q7QWEchVj5E40apAcHaFMeqHq3pDEPb95mR0HZd1XZN20msxAcJccInf4wknn2Y4ljXddtNhLrJ7sGgI3CkLeWlvlXlnSryolwCrqxDEmRBYiDGDbApnsgUWMNPiXw5OlW50gjoLDhntp4t9FI+m1OnHIxCVxgqLI8YUkhgCa0rLWsOzkcnfrdFlip27ZfoNtgRYzWJJm94BNlziH9K+1sBicBrs6MiTdagNCrAew3pe1MdMk+richNvrq4K9l7cP9N3n1Myon33xfqx0LJtjS9i72Il0km/gGH3yRQyaEF5gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/09dee4224d527f5831843599f577d8b3/50512/machine.webp 163w,
+/static/09dee4224d527f5831843599f577d8b3/aeba0/machine.webp 325w,
+/static/09dee4224d527f5831843599f577d8b3/001d9/machine.webp 650w,
+/static/09dee4224d527f5831843599f577d8b3/97fd0/machine.webp 975w,
+/static/09dee4224d527f5831843599f577d8b3/05607/machine.webp 1300w,
+/static/09dee4224d527f5831843599f577d8b3/13539/machine.webp 1908w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/09dee4224d527f5831843599f577d8b3/19bd1/machine.png 163w,
+/static/09dee4224d527f5831843599f577d8b3/d3bcb/machine.png 325w,
+/static/09dee4224d527f5831843599f577d8b3/dbb61/machine.png 650w,
+/static/09dee4224d527f5831843599f577d8b3/6b691/machine.png 975w,
+/static/09dee4224d527f5831843599f577d8b3/91670/machine.png 1300w,
+/static/09dee4224d527f5831843599f577d8b3/99445/machine.png 1908w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/09dee4224d527f5831843599f577d8b3/dbb61/machine.png"
+          alt="Création de machines"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>Rancher propose des connecteurs à plusieurs services cloud du web comme
+Amazon EC2, Azure, Digital Ocean, mais vous pouvez également ajouter
+n’importe quelle machine disposant de docker comme “host” Rancher
+(“Custom”).</p>
+<p>Pour l’exemple, j’ai ajouté deux machines au cluster nommées node1 et
+node2, et j’ai ajouté l’hôte Rancher lui-même self
+(c’est possible mais non recommandé).</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/bcd00c6977b0abb9aa112407e39372d8/98e90/host.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 62.89640591966174%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABy0lEQVQoz41Ry27TQBTNJ7CICmJBVyyR+EFIqwiJBR/AniU0AVXlD1ixRBUhiZo0dmN7/BjPjD0vvzhjS0lVFYnRkX3n3Htm7rkzej39fDKZn07n47cXL6Zfx5OLl+8vX324On337enZ7Pn5fDyZnZzNnp3Pn7z58gAjru3vkOXKrvbxOkgjoZf7eBNlROhtnC98Egm1ClKkSGEQo+CAUUbZxx9/Ln/dqrLkopBSMi5yJspSClFwLsAIIRAoqR6s0Y0ffPq5/n69gzLNecoAwYoS8oxx6rY86xmKAspQk1A2YNR1XdO2Xdc2TaONsVVVNw2AqKlrY4y2YFwWZGWt0jrBHT2cWGpToCWtByUWDsG+Z+q6blCDv3XpGp+kv9+Jm6oqpSzdwiFQWa0UfBY9g9KU5iGJSZKSNIuSLOciPdy89YPFxlvd+l5IwiQjKV1u/eXGW+/udiEhWb6Ps+sbb7G92wXEi+LDtU6MMXgxxTx4KUup0H+YsX2as0I6BjPVhmL2vXVlLLo7tg0/WhtYts5PjdK2bXtGwy3GZp3XSkoFSxitNvYoxpPG9x5gCIbcwFAmcl5QLqj7Fni2Y9tMFPdt/AuP1vyv+FH8BeVBwG9QQM+oAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/bcd00c6977b0abb9aa112407e39372d8/50512/host.webp 163w,
+/static/bcd00c6977b0abb9aa112407e39372d8/aeba0/host.webp 325w,
+/static/bcd00c6977b0abb9aa112407e39372d8/001d9/host.webp 650w,
+/static/bcd00c6977b0abb9aa112407e39372d8/e0bf0/host.webp 946w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/bcd00c6977b0abb9aa112407e39372d8/19bd1/host.png 163w,
+/static/bcd00c6977b0abb9aa112407e39372d8/d3bcb/host.png 325w,
+/static/bcd00c6977b0abb9aa112407e39372d8/dbb61/host.png 650w,
+/static/bcd00c6977b0abb9aa112407e39372d8/98e90/host.png 946w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/bcd00c6977b0abb9aa112407e39372d8/dbb61/host.png"
+          alt="Hosts"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<h4>Créer son service</h4>
+<p>Il faut maintenant créer une stack pour accueillir notre service whoami.
+Dans la logique Rancher, une stack est un ensemble de services.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/c862fa4069b40c90035b4b3a02c9addd/f1142/stack.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 51.11804472178887%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABDUlEQVQoz43OS07DMBAGYJ+ZOyAeOQC3YN1FWnaIBRtoglBBLQlpEW1ejhM/xzFOo0RJihC/voU9Mx4Z3bhPF+7SufOvF76z8K8W3uXcO3f/tjy7fXBmj0iySithjDYGOnpgcu2AUIKhinOltSVhhCsouSSUSQAFJ13QTCrEhGBcCKnqLlrb3SbMyvnrriip7SqAehBT1/ebw2qPkVA2ANA8GEY3U3asBt0eR1G6tisRqSguaUV584UBKsTzLsWUCSknLcsWKecoznHrkOVD32k28z6CfRLn+aTVQ9s4O77E/ZZeSUiS/1Lvoa8U54RkRSMdS3CRnhRb7TB6WYdvQdQIo/XndvM/70G0CqIfId0rn36KyBQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/c862fa4069b40c90035b4b3a02c9addd/50512/stack.webp 163w,
+/static/c862fa4069b40c90035b4b3a02c9addd/aeba0/stack.webp 325w,
+/static/c862fa4069b40c90035b4b3a02c9addd/001d9/stack.webp 650w,
+/static/c862fa4069b40c90035b4b3a02c9addd/97fd0/stack.webp 975w,
+/static/c862fa4069b40c90035b4b3a02c9addd/05607/stack.webp 1300w,
+/static/c862fa4069b40c90035b4b3a02c9addd/2b79d/stack.webp 1923w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/c862fa4069b40c90035b4b3a02c9addd/19bd1/stack.png 163w,
+/static/c862fa4069b40c90035b4b3a02c9addd/d3bcb/stack.png 325w,
+/static/c862fa4069b40c90035b4b3a02c9addd/dbb61/stack.png 650w,
+/static/c862fa4069b40c90035b4b3a02c9addd/6b691/stack.png 975w,
+/static/c862fa4069b40c90035b4b3a02c9addd/91670/stack.png 1300w,
+/static/c862fa4069b40c90035b4b3a02c9addd/f1142/stack.png 1923w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/c862fa4069b40c90035b4b3a02c9addd/dbb61/stack.png"
+          alt="Stack"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>On peut remarquer que pour l’ajout d’une stack, on peut importer un
+fichier <code class="language-text">docker-compose.yml</code> et un fichier <code class="language-text">rancher-compose.yml</code>.</p>
+<p>Le fichier docker-compose.yml définit la structure de la stack,
+l’ensemble de ses services ainsi que leurs configurations.
+Ce fichier est natif de l’api Docker Compose.`</p>
+<p>Le fichier rancher-compose est un “add-on” au docker compose,
+il permet de configurer des paramètres Rancher comme la configuration
+des loadbalancer (HA-Proxy) et la scalabilité horizontale des services.
+Ces deux fichiers sont exportables à tout moment, cela peut-être très
+pratique pour une réinstallation (par exemple, voici la
+<a href="https://drive.google.com/file/d/0B0NhGeba-vjZVnJldGRYUTBZaGs/view">configuration de la stack</a>
+qui est installée dans cette partie).</p>
+<p>Une fois la stack créée en lui donnant uniquement un nom, il faut
+ajouter notre service whoami. Pour cela il suffit de cliquer sur
+“Add service” et de le définir comme cela.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/48d761834dc232cc35b22955f7da9c22/5bc63/whoami.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 51.546932354483474%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABE0lEQVQoz32RS07EMAyGc2POANIw7FlwCA6A0HSWbBGjKRIHADEzfaWtE9tJmmC66wN+fYqs/HFix+r+6fV2d9ju37dZfrfPN9lxk+U3u+M/XD8frh5fHrI35dAMnlOKKQ1T4trmSAwpkCOrejAtGCAGJPa+56AtW6KyM2fdG0SwKNYMS4zkFBIxO3ZecOMqd8QQPhv4+K5JxM6N1gxkVoZoGKSYFKdKY9GSKG5cSE477xVY2wGEEGZHhpHlpZNkKduitMvLF8QWxT8kH6R4tNOapFepaNVC578aUMbatu+rRte6rdu20lpWiQGxBeiNlWCVzliFaKq6uZSVcCrK06WQ4FyUMiRpRmY2A3+HxPLVkv8DCPY3w7YFM+QAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/48d761834dc232cc35b22955f7da9c22/50512/whoami.webp 163w,
+/static/48d761834dc232cc35b22955f7da9c22/aeba0/whoami.webp 325w,
+/static/48d761834dc232cc35b22955f7da9c22/001d9/whoami.webp 650w,
+/static/48d761834dc232cc35b22955f7da9c22/97fd0/whoami.webp 975w,
+/static/48d761834dc232cc35b22955f7da9c22/05607/whoami.webp 1300w,
+/static/48d761834dc232cc35b22955f7da9c22/775a1/whoami.webp 1907w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/48d761834dc232cc35b22955f7da9c22/19bd1/whoami.png 163w,
+/static/48d761834dc232cc35b22955f7da9c22/d3bcb/whoami.png 325w,
+/static/48d761834dc232cc35b22955f7da9c22/dbb61/whoami.png 650w,
+/static/48d761834dc232cc35b22955f7da9c22/6b691/whoami.png 975w,
+/static/48d761834dc232cc35b22955f7da9c22/91670/whoami.png 1300w,
+/static/48d761834dc232cc35b22955f7da9c22/5bc63/whoami.png 1907w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/48d761834dc232cc35b22955f7da9c22/dbb61/whoami.png"
+          alt="Whoami example"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>On remarque que seul le nom du service, l’image docker et le “port map”
+ont été définis (ie: c’est un exemple simple, vous pouvez voir par les
+onglets du bas que la configuration peut être beaucoup plus poussée,
+gestion des volumes, du network du service, des HealthCheck).</p>
+<p>Après cette simple configuration, il suffira de cliquer sur “Create” et
+informagiquement votre service sera déployé sur un host choisi par Cattle.</p>
+<p>Vous allez me dire, “qu’est ce que Cattle ?”, et vous aurez raison.
+Cattle est l’orchestrateur par défaut utilisé par Rancher. Il est
+maintenu par l’équipe de Rancher et le projet est open-source et
+disponible sur Github.</p>
+<p>Sachez que Rancher fonctionne également avec Kubernetes, Swarm et
+Mesos mais pour cet article, je me suis limité à l’utilisation de Cattle.</p>
+<h4>Scaler et Loadbalancer</h4>
+<p>Après quelques temps de démarrage, votre service whoami devrait être
+disponible.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/8f75f/start.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 43.87755102040816%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQoz63N204CMRAG4L7/A/ggvoIx4IVhwUW4UkGi0C49zKm7y41jV1ETIzEh+TJpZ/5pzTYS5i73vXQ/5P4weD93vQXZRJbuYH28f1gvn54fV2tjQ4pICQmIjxJRAPSAw0hELmeri6vl1uuQXYjIvLM7o5OgCWbJmT9ps0nQRNARimhH2hZZgEX3CpTcGn3mV01MyqlytcX3gH5uhtB/uZDoTMvpo7tPcNLXsvXB+XCsdn+aKzEgMqNJPa7ubqb1qNTJfFH9aTpfjKv6+na2eXl9A7+q8wIdABJZAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/50512/start.webp 163w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/aeba0/start.webp 325w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/001d9/start.webp 650w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/97fd0/start.webp 975w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/05607/start.webp 1300w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/1b45a/start.webp 1372w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/19bd1/start.png 163w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/d3bcb/start.png 325w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/dbb61/start.png 650w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/6b691/start.png 975w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/91670/start.png 1300w,
+/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/8f75f/start.png 1372w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/e8e9c7193ddbbf5ec9e4e6d47167aa26/dbb61/start.png"
+          alt="Start"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>Si vous cliquez sur le “80”, vous devez accéder au service whoami.
+Il vous donnera plusieurs informations sur lui-même, notamment son nom.</p>
+<p>Le but maintenant est de scaler notre service, afin de le distribuer
+sur plusieurs machines.</p>
+<p>Dans le détail du service, on peut voir que la scale est actuellement
+définie à 1. Il suffirait donc de l’augmenter ? Et bien non, le service
+que nous venons de définir occupe le port 80 de la machine. Il ne
+pourrait donc pas être disponible plus d’une fois par machine. Et c’est
+là l’une des problématiques des microservices : l’allocation dynamique
+de port et la “connaissance” des services par le loadbalancer. Rancher
+offre une solution simple à ce problème, il ne faut plus réserver de
+port pour son application, le loadbalancer va connaître les services
+par l’orchestrateur.</p>
+<p>Il faut donc supprimer la configuration du port statique du service.</p>
+<p>Une fois le port libéré , il faut donc créer un loadbalancer qui
+distribue la charge entre les instances de whoami. Dans la stack,
+cliquez sur “Add Load Balancer”</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/36278add82f22f1e306be60a799b6681/68b76/loadb.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 48.24146981627296%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABcklEQVQoz3WQS27bMBCGeeVeoLsmrQ/RG3RddBGnu6LLLCygKOLGtC1K5PAxQ0rUI44zkpzAmwIfhj9/kjOcEau7zZd1wazui8/r4nZd3NxtPv2fm3Xx8fvDh2+/vv58EOjs2KbzaTg/9y9jdxq685AvjFf6ilPXdCkSotgelKy0rI0CJ7X7V8G+NnJmp7RU+n0rq4tg56CB7wuMDaUmxMSktmVim9OMoxgoxmZyFtrcNflyiqkRxge+VFt/1MDC4YQNVIFTBrTzDmnyiU2U2iobXEDWEFDAvGjra7AhxuULniJ4BB9YXJyYkGhbgTSO05nlsfHoiBT4bWlqHyuHnFtZLC0qh+zUnpjKEWD6o2CnrUXSAfm9cCHsy+rpoB736u/u+HSslfUMt8O5DcZ3AGNpg/bouZEZkXOeVMCAFIhi0/TDMI6D5MoeM8+o77s3+mGKeabtOsHV7TwSjgu1n2b8Y7P7/VgiRe5rmQvMX4UrXgFKuCOQyjheAwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/36278add82f22f1e306be60a799b6681/50512/loadb.webp 163w,
+/static/36278add82f22f1e306be60a799b6681/aeba0/loadb.webp 325w,
+/static/36278add82f22f1e306be60a799b6681/001d9/loadb.webp 650w,
+/static/36278add82f22f1e306be60a799b6681/97fd0/loadb.webp 975w,
+/static/36278add82f22f1e306be60a799b6681/05607/loadb.webp 1300w,
+/static/36278add82f22f1e306be60a799b6681/1d9ac/loadb.webp 1905w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/36278add82f22f1e306be60a799b6681/19bd1/loadb.png 163w,
+/static/36278add82f22f1e306be60a799b6681/d3bcb/loadb.png 325w,
+/static/36278add82f22f1e306be60a799b6681/dbb61/loadb.png 650w,
+/static/36278add82f22f1e306be60a799b6681/6b691/loadb.png 975w,
+/static/36278add82f22f1e306be60a799b6681/91670/loadb.png 1300w,
+/static/36278add82f22f1e306be60a799b6681/68b76/loadb.png 1905w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/36278add82f22f1e306be60a799b6681/dbb61/loadb.png"
+          alt="Load balancer"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>Une fois le loadbalancer créé, on peut donc augmenter la scale de son
+application sans avoir de problème d’allocation de port. Si vous cliquez
+le “80” du loadbalancer, vous devez atteindre votre service, et s’il
+est scalé, l’hostname devrait changer au refresh.</p>
+<p>A ce stade du déploiement, on peut se demander, ce qu’il en est de
+l’infrastructure des machines créées plus tôt.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/5ac8774826df26dbe266ef830d1b3ff8/b9380/host2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 83.97129186602871%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsSAAALEgHS3X78AAACXklEQVQ4y01T2W7bQAzUh/cb+jF9Loo+96koiqRuEkuWrVva+15J6dBCkgKEzeVyuMMhVTAfX19fa2ZC3lwIt35yMfmY+5kvUqd1U8Y1wxxSNj7AwS2ChxXNxBYuvj1ev59uk5AjDtoIpSfGJya0tUyqkXGJoNbjwqTWxrnDisfq9lRdP3/9+enLj3pEukaJRao3Ix/4+SMokYDjxEXRCx1y2vd9W/O6rspYFyKqgmeE5ex9MM7bEKwPyEAw5YwsbV0xCI2et31HxrpucFKmfwSRh0JUd9vgIwI/xHTc+hAJvObsfIQQqKesu5dPeDDECJNKAwkHGUDiyjrnfQSRomUSLthCHmUMCB+0rfNMSiakpj4Sbk9lfWn7d5u5LM7d9Odcn2/dtR+rdiibfhGyvHYPz9WlHy/dULV9M85c6Us7NMNEz5BgCkMpOq5IDx/QmPYe/MHQej8zga5AUuEObCPYEkHqFtG8AkVg0MYcoRIkRe8w5wMiAGUkETZhf8CfS0VSkxwkEIHtBziiP08vA6wI9Q72HpsDCXDQzpMuBxhksFjxvoC4AFnjPSKIh5S4sTlnHH+dXn4/lQ/PZdX05a2DhFgSdZ+HwYQccaZ54HHsI9HeNvwlmqVflBm4BjtEQI2WpOynv9UVY4DVXQ9tF6Gqpnt8uZwwhWtbdwO+FmSjllIahagYeoRgzSJGJuthAQjqS0MbgB2+jQzGlOba6Ps4Ir2PvmgRoAW9PCt7bCLtWM53nxZw3XZE0PNGK7ujysjF8UnQV3H/LdpF0jf4ZlgGek3pj4im4/wG+9/+AeOJxYHnd8zNAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/5ac8774826df26dbe266ef830d1b3ff8/50512/host2.webp 163w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/aeba0/host2.webp 325w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/001d9/host2.webp 650w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/5499a/host2.webp 836w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/5ac8774826df26dbe266ef830d1b3ff8/19bd1/host2.png 163w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/d3bcb/host2.png 325w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/dbb61/host2.png 650w,
+/static/5ac8774826df26dbe266ef830d1b3ff8/b9380/host2.png 836w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/5ac8774826df26dbe266ef830d1b3ff8/dbb61/host2.png"
+          alt="Hosts"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>Rancher a déployé les conteneurs docker de façon équilibrée entre les
+différentes machines. On peut définir nos propres règles de déploiement
+par l’utilisation de label sur les machines.</p>
+<p>Par exemple, on peut ajouter le label “name = frontend”, et pour chaque
+service que l’on crée, définir si il peut démarrer ou non sur la machine
+dont le name est frontend.</p>
+<p>Sur chacun des conteneurs, rancher nous permet d’accéder à un shell et
+une vue des logs, ce qui est très pratique pour le débug.</p>
+<p>Certes cet exemple était simple, mais on peut facilement déployer des
+architectures plus complexes grâce à Rancher, et c’est là tout son
+intérêt. Voici l’architecture des services de l’un des projets que j’ai
+déployé grâce à lui.</p>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/39e646d632a82cd4ad26d901963a1c11/2f08b/microservices.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 548px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 74.08759124087592%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsSAAALEgHS3X78AAAB/ElEQVQoz4WTa4/SQBSG+f9/w/jBxBhdNRphF7kVohRo0V6gHXrvTKdzLYWE+GEPGtcsLtnkfDozb94zz3mnU0t1rSKKA5IFJIcKq5wIcXGhc1Ws1NSxDXPRnRij+Xy8NBEpuGqolM+LKyl34FZWKEjiKMeUpnXFpH7Gmf4uwgU9qI3MXrhfeqmpTm3GaS31n9OrYqY0l03JWUgLREu7RD5JdxRHNYY+mD/4X4orITNGc167OAY9+GvdMqmw4IgWQZUXnJWMXYqBBPCIKb6dzz4PR69ve13DAGai2W+ypDsz3ve/vu3f9abTZehz3Vw6wzwFeIbh2nIty3OdMMhTIkVCySZA9spb257vI4TzJ8YGcSmYPrV32eKl39uqjB11wRjWXP1qP0SzV9t+cahpqyouHonPnFQT1eRsXiWrMgRCcU0w53AK7/+BI4AX17j6m5bOw1ZrKWEZESOAR6p9o49caeiHrIDJ4Q6Qa/RBqObfnqmQUu+BwWD1/eNk+Gk2Ga7mbh4z3RieNbbMm3EfEI5sMyTFec9CPhLDtNs88bfIMp3V0tnFKSI5xNNJ0A7F1uKn74RhnEDUYRZ6kTAq1JlBK95tx130rTkdSsXgqfyod6p84w0HsbU/HWH5T8cTICNWDpP1LHcjjiES0CwE86pkkNjzwk959f+vugfbxSvXfEKQDAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/39e646d632a82cd4ad26d901963a1c11/50512/microservices.webp 163w,
+/static/39e646d632a82cd4ad26d901963a1c11/aeba0/microservices.webp 325w,
+/static/39e646d632a82cd4ad26d901963a1c11/b1566/microservices.webp 548w"
+          sizes="(max-width: 548px) 100vw, 548px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/39e646d632a82cd4ad26d901963a1c11/19bd1/microservices.png 163w,
+/static/39e646d632a82cd4ad26d901963a1c11/d3bcb/microservices.png 325w,
+/static/39e646d632a82cd4ad26d901963a1c11/2f08b/microservices.png 548w"
+          sizes="(max-width: 548px) 100vw, 548px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/39e646d632a82cd4ad26d901963a1c11/2f08b/microservices.png"
+          alt="Hosts"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<h3>Un « blue/green deployement » et une “rolling upgrade” en 5 minutes</h3>
+<p>Dans la plupart des cas, une mise en production est souvent un
+passage difficile pour le développeur. Les outils DevOps ont bien
+évidemment permis de simplifier cette étape cruciale de la vie d’un
+projet.</p>
+<p>Rancher permet d’utiliser plusieurs méthodes pour mettre à jour un
+service déjà en production tout en garantissant la continuité des
+services :</p>
+<h4>La rolling upgrade (remplacement d’un service par un autre)</h4>
+<p><img src="assets/rancher/indiana.gif" alt="Hosts"></p>
+<h4>Le blue/green deployement</h4>
+<p>Ces deux méthodes ont été présentées par Christophe Furmaniak et
+Youcef Yekhlef (deux consultants architectes de Zenika) lors de leur
+intervention à de pendant la Devoxx 2016. Je ne peux que vous
+conseiller de la regarder :</p>
+
+          <div
+            class="gatsby-resp-iframe-wrapper"
+            style="padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;"
+          >
+            <div style="position:relative;height:0;padding-bottom:56.25%">
+<iframe src="https://www.youtube.com/embed/QFqt8xMTChY?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          " allowfullscreen></iframe>
+</div>
+          </div>
+          
+<h3>Un service DNS et Network overlay</h3>
+<p>Pour ceux qui ont déjà bien pratiqué Docker, faire communiquer deux
+containeurs entre eux sans avoir d’outil d’orchestration n’est pas très
+aisé. Bien sûr, il y a la publication de port sur le Host, mais on
+arrive vite aux limites. Rancher apporte nativement une fonctionnalité
+d’overlay network via un tunnel ipsec permettant à deux containers sur
+deux machines différentes d’être sur le même réseau virtuel. Rancher va
+plus loin puisqu’il possède son service DNS dans lequel il enregistre
+chaque nouveau container qu’il crée. Cela a plusieurs avantages:</p>
+<ul>
+<li>Deux services d’une même Stack se connaissent par leur nom ;</li>
+<li>Un service peut connaître un service d’une autre stack par <code class="language-text">nomService.nomStack</code>.</li>
+</ul>
+<h3>Un catalogue qui s’enrichit</h3>
+<p><a
+    class="gatsby-resp-image-link"
+    href="/static/ccd638ac43343c2b2dfbacfbdd0cd99f/f8d90/catalogue.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 51.602732527588024%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsSAAALEgHS3X78AAABxklEQVQoz0VQyW4TQRT0L/MHSAkgckLiIzgQDOQCiDi5EgXJmch2EF5iz3gbd09P78vrWXhjIkVqlUrdVV31Xu/dj+HLb8nZ1eTt9eTs+uH1YPxmMH41GJ9cjk4ux6dXkyN5Pqf49HP0ov/r/fffPW+007xtY9vEJljEtqnaOnRYhdbIp5vnU7dNg0pvdU97uFve2qCND/PZzHrvIWbp1ECwJXc3N76qrTVKlA6itl5T4UPYM05K0VPObxjXLiBJaUeEcYt9gZ+W0vzJ8lIZZe18e5DWYcCWSdQUXFAuenPC+/fZgvANVxfj9ZKKbam+jrJ5nq8o/3i3fCQ8LcR5kq6oQPJltEYLl7JLdgEUkxEgK8RDlgul14X6m+3o4d55JwoMA5xFaeWDRzEh1PlA/ycDgBOyiiCNZ1xBCNJ6oUxd1wHASgMxotorFgG3EWMICKTknRkLnw8fsduO636yWhVyx9XnZJkWKiX8w+10cSjXTH4aLtJCbkp1McpQ09VGc6ntYs9wK1ybLM+PxE5zwnRHZjlBQSFNsuVImDIpU4hPC8MmSogQAkRoxQaHxyEJ3UNXEA50h8SGOKU+VpUHaOoqRiBH8z+MIyKtn5nTGQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    ></span>
+    <picture>
+        <source
+          srcset="/static/ccd638ac43343c2b2dfbacfbdd0cd99f/50512/catalogue.webp 163w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/aeba0/catalogue.webp 325w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/001d9/catalogue.webp 650w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/97fd0/catalogue.webp 975w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/05607/catalogue.webp 1300w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/3bdd0/catalogue.webp 1903w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/webp"
+        />
+        <source
+          srcset="/static/ccd638ac43343c2b2dfbacfbdd0cd99f/19bd1/catalogue.png 163w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/d3bcb/catalogue.png 325w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/dbb61/catalogue.png 650w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/6b691/catalogue.png 975w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/91670/catalogue.png 1300w,
+/static/ccd638ac43343c2b2dfbacfbdd0cd99f/f8d90/catalogue.png 1903w"
+          sizes="(max-width: 650px) 100vw, 650px"
+          type="image/png"
+        />
+        <img
+          class="gatsby-resp-image-image"
+          style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;"
+          src="/static/ccd638ac43343c2b2dfbacfbdd0cd99f/dbb61/catalogue.png"
+          alt="Rancher catalogue"
+          title=""
+        />
+      </picture>
+  </span>
+  </a></p>
+<p>Rancher possède son propre catalogue d’applications, ces applications
+sont sous la forme de groupes de stacks pré-configurées qui s’appuient
+sur les images du Docker Hub :</p>
+<ul>
+<li>La stack Elastic ;</li>
+<li>Janitor, un service basé sur docker-cleanup, pour nettoyer les images et conteneurs non-utilisés. ;</li>
+<li>Traefik, un load balancer développé en Go par Emile Vauge de la Zstartup Containous ;</li>
+<li>Gluster, un gestionnaire de volume partagé ;</li>
+<li>Odoo, le célèbre ERP open source ;</li>
+<li>etc.</li>
+</ul>
+<p>Il est aussi possible d’ajouter son propre
+<a href="http://docs.rancher.com/rancher/v1.5/en/catalog/">catalogue de stacks d’entreprise</a></p>
+<p>Je vous ai présenté ici les principales features de Rancher,
+je ne peux que vous conseiller de le tester pour faire joujou avec vos
+conteneurs Docker. Cependant, la question qu’on peut encore se poser
+aujourd’hui reste la suivante : Rancher ne restera-t-il qu’un joujou
+pour orchestrer des services ? On sait déjà que des entreprises comme
+Orange et Sony commencent à l’utiliser pour des besoins interne
+(cf : Sony et le playstation Network <a href="https://www.youtube.com/watch?v=hwhxXwT6zlw">https://www.youtube.com/watch?v=hwhxXwT6zlw</a>)</p>
+<p>N’hésitez surtout pas à partager vos expériences avec Rancher.</p>
+<p>Merci encore à Youcef Yekhlef, Christophe Furmaniak et à mon tuteur de
+stage Christophe Tardella pour l’aide apportée à la rédaction de cet article.</p></div></div><hr/><section class="author"><img src="https://avatars0.githubusercontent.com/u/6263857?v=4" alt="Antoine Caron" class="author__profile"/><div class="author__description"><h3 class="author__name">Antoine Caron<a href="https://github.com/Slashgear">(@<!-- -->Slashgear<!-- -->)</a></h3><div class="author__bio"><div>Tech enthusiast, web maker, currently working at <a class="user-mention" data-hovercard-type="organization" data-hovercard-url="/orgs/aya-experience/hovercard" href="https://github.com/aya-experience">@aya-experience</a> 
+
+Web and Cloud computing teacher at <a class="user-mention" data-hovercard-type="organization" data-hovercard-url="/orgs/PolytechLyon/hovercard" href="https://github.com/PolytechLyon">@PolytechLyon</a> 
+
+Currently working for <a class="user-mention" data-hovercard-type="organization" data-hovercard-url="/orgs/M6Web/hovercard" href="https://github.com/M6Web">@M6Web</a> </div></div></div></section><aside><h3>Other articles from this author:</h3><nav><ul style="margin:0;list-style:none"><li><a style="text-decoration:none;color:black" href="/posts/slashgear/why-you-should-use-compression-webpack-plugin/"><article class="article-item"><header><h3 class="article-item__title" style="margin:0.5rem 0">🇬🇧<!-- --> <!-- -->Why you should use Compression Webpack Plugin ?</h3><span><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/webpack">#<!-- -->webpack</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/perfs">#<!-- -->perfs</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/compression">#<!-- -->compression</a> by<!-- --> <a href="/authors/slashgear">Antoine Caron</a></span><p>If you are using webpack as module bundler for your application, you probably are concerned by its own performance and loading time.
+You may…</p></header><picture><source srcSet="/static/3f17140a22c3c3708af42934c82a3af3/17370/matt-artz-353260-unsplash.webp 50w,
+/static/3f17140a22c3c3708af42934c82a3af3/74729/matt-artz-353260-unsplash.webp 100w,
+/static/3f17140a22c3c3708af42934c82a3af3/1932c/matt-artz-353260-unsplash.webp 200w,
+/static/3f17140a22c3c3708af42934c82a3af3/9ea76/matt-artz-353260-unsplash.webp 300w,
+/static/3f17140a22c3c3708af42934c82a3af3/f4957/matt-artz-353260-unsplash.webp 400w,
+/static/3f17140a22c3c3708af42934c82a3af3/4fc4f/matt-artz-353260-unsplash.webp 3008w" sizes="30vw" type="image/webp"/><source srcSet="/static/3f17140a22c3c3708af42934c82a3af3/a911e/matt-artz-353260-unsplash.jpg 50w,
+/static/3f17140a22c3c3708af42934c82a3af3/954df/matt-artz-353260-unsplash.jpg 100w,
+/static/3f17140a22c3c3708af42934c82a3af3/d278e/matt-artz-353260-unsplash.jpg 200w,
+/static/3f17140a22c3c3708af42934c82a3af3/c83a6/matt-artz-353260-unsplash.jpg 300w,
+/static/3f17140a22c3c3708af42934c82a3af3/8539d/matt-artz-353260-unsplash.jpg 400w,
+/static/3f17140a22c3c3708af42934c82a3af3/7fcd2/matt-artz-353260-unsplash.jpg 3008w" sizes="30vw" type="image/png"/><img class="article-item__picture" src="/static/3f17140a22c3c3708af42934c82a3af3/d278e/matt-artz-353260-unsplash.jpg" alt="hero"/></picture></article></a></li><li><a style="text-decoration:none;color:black" href="/posts/slashgear/creating-an-image-lazy-loading-component-with-react/"><article class="article-item"><header><h3 class="article-item__title" style="margin:0.5rem 0">🇬🇧<!-- --> <!-- -->Creating an image lazy loading component with React</h3><span><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/react">#<!-- -->react</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/perfs">#<!-- -->perfs</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/images">#<!-- -->images</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/browser">#<!-- -->browser</a> by<!-- --> <a href="/authors/slashgear">Antoine Caron</a></span><p>In the web world, we often have complex page structure.
+All the parts are not visible in the user viewport at first.
+Why should we load all…</p></header><picture><source srcSet="/static/4d61c9ba2cb17bbbad4651402e51284d/17370/lazy-load.webp 50w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/74729/lazy-load.webp 100w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/1932c/lazy-load.webp 200w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/9ea76/lazy-load.webp 300w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/f4957/lazy-load.webp 400w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/e86d5/lazy-load.webp 640w" sizes="30vw" type="image/webp"/><source srcSet="/static/4d61c9ba2cb17bbbad4651402e51284d/a911e/lazy-load.jpg 50w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/954df/lazy-load.jpg 100w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/d278e/lazy-load.jpg 200w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/c83a6/lazy-load.jpg 300w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/8539d/lazy-load.jpg 400w,
+/static/4d61c9ba2cb17bbbad4651402e51284d/47052/lazy-load.jpg 640w" sizes="30vw" type="image/png"/><img class="article-item__picture" src="/static/4d61c9ba2cb17bbbad4651402e51284d/d278e/lazy-load.jpg" alt="hero"/></picture></article></a></li><li><a style="text-decoration:none;color:black" href="/posts/slashgear/enseigner-autrement/"><article class="article-item"><header><h3 class="article-item__title" style="margin:0.5rem 0">🇫🇷<!-- --> <!-- -->Enseigner autrement</h3><span><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/teaching">#<!-- -->teaching</a> by<!-- --> <a href="/authors/slashgear">Antoine Caron</a></span><p>Depuis septembre j’ai pu m’initier à l’enseignement dans le supérieur pour des étudiants en Master 2 et Master 1 à l’école Polytech Lyon. Je…</p></header><picture><source srcSet="/static/1ec1c25b3a831e67c62c52359974eaa6/17370/enseigner-autrement.webp 50w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/74729/enseigner-autrement.webp 100w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/1932c/enseigner-autrement.webp 200w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/9ea76/enseigner-autrement.webp 300w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/f4957/enseigner-autrement.webp 400w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/7a72d/enseigner-autrement.webp 1600w" sizes="30vw" type="image/webp"/><source srcSet="/static/1ec1c25b3a831e67c62c52359974eaa6/a911e/enseigner-autrement.jpg 50w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/954df/enseigner-autrement.jpg 100w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/d278e/enseigner-autrement.jpg 200w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/c83a6/enseigner-autrement.jpg 300w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/8539d/enseigner-autrement.jpg 400w,
+/static/1ec1c25b3a831e67c62c52359974eaa6/989b1/enseigner-autrement.jpg 1600w" sizes="30vw" type="image/png"/><img class="article-item__picture" src="/static/1ec1c25b3a831e67c62c52359974eaa6/d278e/enseigner-autrement.jpg" alt="hero"/></picture></article></a></li><li><a style="text-decoration:none;color:black" href="/posts/slashgear/github-classroom-pourquoi-le-tester/"><article class="article-item"><header><h3 class="article-item__title" style="margin:0.5rem 0">🇫🇷<!-- --> <!-- -->Github classroom, pourquoi vous devriez l&#x27;utiliser</h3><span><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/github">#<!-- -->github</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/teaching">#<!-- -->teaching</a><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/git">#<!-- -->git</a> by<!-- --> <a href="/authors/slashgear">Antoine Caron</a></span><p>Lorsque j&#x27;ai commencé à enseigner en septembre dernier, je recherchais une solution
+pour pouvoir suivre facilement l&#x27;avancée des étudiants…</p></header><picture><source srcSet="/static/2cdb62c2c12f5f4414e7ef905de7d27f/17370/github-classroom-logo.webp 50w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/74729/github-classroom-logo.webp 100w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/1932c/github-classroom-logo.webp 200w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/9ea76/github-classroom-logo.webp 300w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/f4957/github-classroom-logo.webp 400w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/8f8d8/github-classroom-logo.webp 1911w" sizes="30vw" type="image/webp"/><source srcSet="/static/2cdb62c2c12f5f4414e7ef905de7d27f/a911e/github-classroom-logo.jpg 50w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/954df/github-classroom-logo.jpg 100w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/d278e/github-classroom-logo.jpg 200w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/c83a6/github-classroom-logo.jpg 300w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/8539d/github-classroom-logo.jpg 400w,
+/static/2cdb62c2c12f5f4414e7ef905de7d27f/27e4c/github-classroom-logo.jpg 1911w" sizes="30vw" type="image/png"/><img class="article-item__picture" src="/static/2cdb62c2c12f5f4414e7ef905de7d27f/d278e/github-classroom-logo.jpg" alt="hero"/></picture></article></a></li><li><a style="text-decoration:none;color:black" href="/posts/slashgear/kotlin-in-action/"><article class="article-item"><header><h3 class="article-item__title" style="margin:0.5rem 0">🇫🇷<!-- --> <!-- -->Kotlin in action</h3><span><a style="margin:0 0.2rem;text-decoration:none;color:#3f51b5" href="/tags/kotlin">#<!-- -->kotlin</a> by<!-- --> <a href="/authors/slashgear">Antoine Caron</a></span><p>JetBrains, pour les développeurs Java enfermés dans une grotte et ne
+connaissant qu’Eclipse, outre le fait de fournir une suite d’outils…</p></header><picture><source srcSet="/static/18ed72b15bef8c631e7b65d31f3980ea/17370/kotlin.webp 50w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/74729/kotlin.webp 100w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/1932c/kotlin.webp 200w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/9ea76/kotlin.webp 300w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/f4957/kotlin.webp 400w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/80349/kotlin.webp 1000w" sizes="30vw" type="image/webp"/><source srcSet="/static/18ed72b15bef8c631e7b65d31f3980ea/09f8c/kotlin.png 50w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/bf65b/kotlin.png 100w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/7c0ed/kotlin.png 200w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/fdbb0/kotlin.png 300w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/647de/kotlin.png 400w,
+/static/18ed72b15bef8c631e7b65d31f3980ea/e9c7b/kotlin.png 1000w" sizes="30vw" type="image/png"/><img class="article-item__picture" src="/static/18ed72b15bef8c631e7b65d31f3980ea/7c0ed/kotlin.png" alt="hero"/></picture></article></a></li></ul></nav></aside></main></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.page={"componentChunkName":"component---src-templates-blog-post-js","jsonName":"posts-slashgear-rancher-261","path":"/posts/slashgear/rancher/"};window.dataPath="23/path---posts-slashgear-rancher-261-e97-Ck5nIhYHDJkqECV43iNDyf58RY";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-596e68a8093cbd5c6bb9.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-7ade3efd7b4848cc33a1.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-a129a213008f02f05f32.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-9df468d7cd8bc42dcfcf.js"],"component---src-templates-author-js":["/component---src-templates-author-js-147171f7cdfbbb6351e4.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ed2df8c4c397e23a1a6b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-02928c6339d92bc4338e.js"],"pages-manifest":["/pages-manifest-c0dbd29b3741d6124a4c.js"]};/*]]>*/</script><script src="/webpack-runtime-f655d488b2a1eb59506f.js" async=""></script><script src="/styles-359065255d63fd2c3f9a.js" async=""></script><script src="/app-596e68a8093cbd5c6bb9.js" async=""></script><script src="/1-176213520d534cda9cb6.js" async=""></script><script src="/component---src-templates-blog-post-js-a129a213008f02f05f32.js" async=""></script></body></html>
