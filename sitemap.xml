@@ -9,6 +9,7 @@
 <url> <loc>https://open-blog.dev/posts/slashgear/kotlin-in-action/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/posts/slashgear/rancher/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/posts/swiip/react-hooks-my-introduction/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://open-blog.dev/posts/swiip/the-weight-of-js/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/posts/swiip/using-react-hooks/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/posts/pmartin/mixit-2019-lyon-transcript-conference-retour-experience-migration-cloud-6play/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/browser</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -24,6 +25,7 @@
 <url> <loc>https://open-blog.dev/tags/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/kotlin</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://open-blog.dev/tags/minification</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/mixit</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/perfs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://open-blog.dev/tags/rancher</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
