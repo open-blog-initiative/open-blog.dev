@@ -88,6 +88,9 @@ module.exports = {
             }
           }
         `,
+        setup: () => ({
+          image_url: "https://open-blog.dev/icons/icon-96x96.png",
+        }),
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -97,9 +100,13 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  image:
-                    site.siteMetadata.siteUrl +
-                    edge.node.frontmatter.hero.childImageSharp.fluid.src,
+                  enclosure: {
+                    url:
+                      site.siteMetadata.siteUrl +
+                      edge.node.frontmatter.hero.childImageSharp.fluid.src,
+                    size: edge.node.frontmatter.hero.size,
+                  },
+                  categories: edge.node.frontmatter.tags,
                 })
               })
             },
@@ -112,17 +119,18 @@ module.exports = {
                   edges {
                     node {
                       excerpt
-                      html
                       fields { slug }
                       frontmatter {
                         title
                         date
+                        tags
                          hero {
                         childImageSharp {
                           fluid(maxWidth: 200) {
                             src
                           }
                         }
+                        size
                       }
                       }
                     }
