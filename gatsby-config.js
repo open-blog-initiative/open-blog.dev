@@ -88,9 +88,6 @@ module.exports = {
             }
           }
         `,
-        setup: () => ({
-          image_url: "https://open-blog.dev/icons/icon-96x96.png",
-        }),
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
