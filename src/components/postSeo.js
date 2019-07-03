@@ -66,7 +66,15 @@ export const PostSeo = ({ article }) => {
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "TechArticle",
+          "@type": "BlogPosting",
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id":
+              article.frontmatter.pseudo &&
+              `http://open-blog.dev/${article.frontmatter.pseudo}/${
+                article.fields.slug
+              }`,
+          },
           headline: article.frontmatter.title,
           image:
             article.frontmatter.hero &&
@@ -75,7 +83,14 @@ export const PostSeo = ({ article }) => {
           author: article.frontmatter.author,
           keywords:
             article.frontmatter.tags && article.frontmatter.tags.join(", "),
-          publisher: "Open Blog",
+          publisher: {
+            "@type": "Organization",
+            name: "Open Blog",
+            logo: {
+              "@type": "ImageObject",
+              url: "https://open-blog.dev/icons/icon-144x144.png",
+            },
+          },
           url:
             article.frontmatter.pseudo &&
             `http://open-blog.dev/${article.frontmatter.pseudo}/${
