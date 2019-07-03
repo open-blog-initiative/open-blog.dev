@@ -2,14 +2,16 @@
   display: flex;
   margin-bottom: 2rem;
 }
+
 .author > .author__description {
   padding-left: 16px;
 }
 .author__profile {
   width: 100px;
-  height: 100px;
+  height: auto;
   border-radius: 50%;
 }
+
 .author__name {
   margin: 0;
 }
