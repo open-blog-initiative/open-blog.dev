@@ -1,3 +1,18 @@
+------
+type: post
+author: Maxime BLANC
+pseudo: jeansmaug
+date: 2019-03-19 # A valid date corresponding to the publish date
+title: Déploiement continu avec CircleCI - Partie 1
+hero: ./assets/enseigner-autrement.jpeg  # Required
+description: Déployer une application VueJS sur Firebase hosting avec CircleCI
+tags:
+  - CircleCi
+  - CD
+  - Firebase
+commentIssueId: 31 # Id of a issue that will keep comments about your post
+---
+
 Je vous propose de mettre en place un déploiement continu en utilisant [Condorcet](https://github.com/jean-smaug/condorcet), un de mes projets, comme exemple.
 Le but est de présenter les différents concepts inhérents à CircleCI au travers d'un cas concret.
 Dans la première partie on mettra en place une solution fonctionnelle que l'on optimisera en seconde partie.
