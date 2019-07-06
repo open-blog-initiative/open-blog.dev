@@ -205,8 +205,6 @@ services :
 
 #### La rolling upgrade (remplacement d’un service par un autre)
 
-![Hosts](./assets/rancher/indiana.gif)
-
 #### Le blue/green deployement
 
 Ces deux méthodes ont été présentées par Christophe Furmaniak et

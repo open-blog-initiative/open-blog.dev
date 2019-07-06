@@ -144,5 +144,13 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-html2amp",
+      options: {
+        files: ["posts/**/index.html"],
+        publicPath: "public",
+        dist: "public/amp",
+      },
+    },
   ],
 }

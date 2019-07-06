@@ -62,6 +62,18 @@ export const PostSeo = ({ article }) => {
               article.frontmatter.hero.childImageSharp.fixed.src,
         },
       ]}
+      link={[
+        {
+          rel: "canonical",
+          href: article.frontmatter.canonical
+            ? article.frontmatter.canonical
+            : `http://open-blog.dev/${article.fields.slug}`,
+        },
+        {
+          rel: "amphtml",
+          href: `http://open-blog.dev/amp${article.fields.slug}`,
+        },
+      ]}
     >
       <script type="application/ld+json">
         {JSON.stringify({
@@ -69,11 +81,7 @@ export const PostSeo = ({ article }) => {
           "@type": "BlogPosting",
           mainEntityOfPage: {
             "@type": "WebPage",
-            "@id":
-              article.frontmatter.pseudo &&
-              `http://open-blog.dev/${article.frontmatter.pseudo}/${
-                article.fields.slug
-              }`,
+            "@id": `http://open-blog.dev/${article.fields.slug}`,
           },
           headline: article.frontmatter.title,
           image:

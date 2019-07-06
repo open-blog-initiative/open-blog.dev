@@ -1,6 +1,7 @@
 ---
 type: doc
 commentIssueId: 31
+canonical: https://open-blog.dev/contributing
 title: Contribute
 description: This page explains how to contribute to Open blog by publishing your own content in it.
 ---
