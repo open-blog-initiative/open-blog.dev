@@ -1,4 +1,13 @@
-# open-blog.dev
+<h1 align="center">Open Blog 👋</h1>
+
+<p align="center">
+  <a href=" https://github.com/open-blog-initiative/open-blog.dev/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
+  </a>
+  <a href="https://twitter.com/Slashgear_">
+    <img alt="Twitter: Antoine Caron" src="https://img.shields.io/twitter/follow/Slashgear_.svg?style=social" target="_blank" />
+  </a>
+</p>
 
 _Open Blog_ is a blog post _open source_ publication platform to let everybody share as many post as he/her want.
 If you publish a blog post on your own blog, it won't have great visibility.
@@ -29,7 +38,7 @@ Taking advantage of Github Pages and a travis deployment, Open Blog does not nee
 
 ## Share your blog post :rocket:
 
-If you want to publish an article here, take a look at the ["How to"](https://open-blog.dev/contributing.html#share-your-blog-posts) documentation.
+If you want to publish an article here, take a look at the ["How to"](https://open-blog.dev/contributing) documentation.
 
 ## Make "Open Blog" a better place :sparkles:
 
