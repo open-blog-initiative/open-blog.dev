@@ -67,11 +67,11 @@ export const PostSeo = ({ article }) => {
           rel: "canonical",
           href: article.frontmatter.canonical
             ? article.frontmatter.canonical
-            : `http://open-blog.dev/${article.fields.slug}`,
+            : `https://open-blog.dev${article.fields.slug}`,
         },
         {
           rel: "amphtml",
-          href: `http://open-blog.dev/amp${article.fields.slug}`,
+          href: `https://open-blog.dev/amp${article.fields.slug}`,
         },
       ]}
     >
