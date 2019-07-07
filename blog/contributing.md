@@ -76,7 +76,7 @@ In order to work locally on your blog post and see how it will be displayed when
 - Clone your forked version
 - Install dependencies
 
-```sh
+```
 yarn install
 ```
 
@@ -89,8 +89,26 @@ GITHUB_TOKEN=<your generated token>
 
 - Start dev server
 
-```sh
+```
 yarn start
+```
+
+## Importing articles from Medium
+
+If you wan to share some articles from Medium on Open Blog, you can use the `@open-blog/medium-importer` package.
+It will fetch the article and assets directly in the project structure.
+You will just have to verify the `frontmatter` datas and article layout.
+
+In the project,`root` directory:
+
+```
+yarn medium <url-of-your-medium-article> <github-username-without-@>
+```
+
+Example with:
+
+```
+yarn medium https://medium.com/@Slashgear_/enseigner-autrement-3d4a64fbb210 slashgear
 ```
 
 ## Question and answer
@@ -132,10 +150,6 @@ yarn start
 - **Can I use a Github organisation as an author?**
 
   Yes, of course. Submitter should be member of the organisation.
-
-- **How can I move my Medium content to Open Blog ?**
-
-  Like many authors, if you want to avoid your readers getting stuck behind a paywall, you can simply export your article in Markdown format with this [tool](https://www.npmjs.com/package/mediumexporter).
 
 - **Can my article be rejected ?**
 
