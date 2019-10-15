@@ -7,6 +7,9 @@
   <a href="https://twitter.com/Slashgear_">
     <img alt="Twitter: Antoine Caron" src="https://img.shields.io/twitter/follow/Slashgear_.svg?style=social" target="_blank" />
   </a>
+  <a href="https://greenkeeper.io/" rel="nofollow" class="rich-diff-level-one">
+    <img src="https://camo.githubusercontent.com/83a6be817163660d3ef8d7096477b60edab65137/68747470733a2f2f6261646765732e677265656e6b65657065722e696f2f6f70656e2d626c6f672d696e69746961746976652f6f70656e2d626c6f672e6465762e737667" alt="Greenkeeper badge" data-canonical-src="https://badges.greenkeeper.io/open-blog-initiative/open-blog.dev.svg" style="max-width:100%;">
+  </a>
 </p>
 
 _Open Blog_ is a blog post _open source_ publication platform to let everybody share as many post as he/her want.
@@ -16,8 +19,6 @@ Gathering post on the same publication is a great way to share audience with the
 https://open-blog.dev
 
 ## Why ?
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/open-blog-initiative/open-blog.dev.svg)](https://greenkeeper.io/)
 
 Of course this type of platform already exists but they have an important problem: _an economic model_.
 
