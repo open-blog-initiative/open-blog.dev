@@ -17,6 +17,8 @@ https://open-blog.dev
 
 ## Why ?
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/open-blog-initiative/open-blog.dev.svg)](https://greenkeeper.io/)
+
 Of course this type of platform already exists but they have an important problem: _an economic model_.
 
 To summarize, sharing your articles on Open Blog is to guarantee to your users:
